@@ -1,12 +1,12 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import TestimonialList from '@/data/testimonial'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { RatingStars } from '../shared/Rating'
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import TestimonialList from '@/data/testimonial';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { RatingStars } from '../shared/Rating';
 
 const TestimonialSingle = () => {
-  const { TestimonialData } = TestimonialList
+  const { TestimonialData } = TestimonialList;
   return (
     <section className=" relative pb-25">
       <div className="absolute -top-[300px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
@@ -24,7 +24,8 @@ const TestimonialSingle = () => {
                 key={testimonial.id}
                 initial="initial"
                 animate="animate"
-                variants={fadeUpAnimation}>
+                variants={fadeUpAnimation}
+              >
                 <div className="rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark">
                   <Image
                     src={testimonial.logoLight}
@@ -60,7 +61,9 @@ const TestimonialSingle = () => {
                       height={56}
                     />
                     <div className="block">
-                      <h3 className="text-base font-semibold">{testimonial.author.name}</h3>
+                      <h3 className="text-base font-semibold">
+                        {testimonial.author.name}
+                      </h3>
                       <p className="font-jakarta_sans text-sm font-medium text-paragraph-light dark:text-[#A1A49D]">
                         {testimonial.author.designation}
                       </p>
@@ -73,7 +76,7 @@ const TestimonialSingle = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSingle
+export default TestimonialSingle;

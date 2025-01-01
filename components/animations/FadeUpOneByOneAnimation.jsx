@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import PropTypes from 'prop-types'
-import { useRef } from 'react'
+import { motion } from 'framer-motion';
+import PropTypes from 'prop-types';
+import { useRef } from 'react';
 
 const FadeUpOneByOneAnimation = ({ children, className, i }) => {
-  const ref = useRef(null)
+  const ref = useRef(null);
   return (
     <motion.div
       ref={ref}
@@ -13,15 +13,16 @@ const FadeUpOneByOneAnimation = ({ children, className, i }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: i * 0.2 }}
-      className={className}>
+      className={className}
+    >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
 FadeUpOneByOneAnimation.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-}
+};
 
-export default FadeUpOneByOneAnimation
+export default FadeUpOneByOneAnimation;

@@ -1,12 +1,11 @@
 ---
 title: The Princples of Accounting
-thumbnail: "/images/blog/blog2.jpg"
-featureImage: "/images/blog/blog2.jpg"
+thumbnail: '/images/blog/blog2.jpg'
+featureImage: '/images/blog/blog2.jpg'
 date: Aug 30, 2024
 author: Kristin Watson
-categories: "Acounting"
+categories: 'Acounting'
 tags: Acounting
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.
@@ -24,7 +23,7 @@ Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare
 - Manage your time so you’ll get more done in less time
 - Cut expenses without sacrificing quality
 - Attract and retain quality, high-paying customers
-<!-- 
+<!--
 ![blog images](/images/blog/blogDetails1.png)
 ![about images](/images/blog/blogDetails2.png) -->
 

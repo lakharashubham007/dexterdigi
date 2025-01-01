@@ -1,42 +1,44 @@
-'use client'
+'use client';
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 const Timer = () => {
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date('12/31/2024 23:59:59')
+    const target = new Date('12/31/2024 23:59:59');
     const interval = setInterval(() => {
-      const now = new Date()
-      const difference = target.getTime() - now.getTime()
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24))
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
       {
-        d < 10 ? setDays('0' + d) : setDays(d)
+        d < 10 ? setDays('0' + d) : setDays(d);
       }
 
-      const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const h = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
       {
-        h < 10 ? setHours('0' + h) : setHours(h)
+        h < 10 ? setHours('0' + h) : setHours(h);
       }
 
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       {
-        m < 10 ? setMinutes('0' + m) : setMinutes(m)
+        m < 10 ? setMinutes('0' + m) : setMinutes(m);
       }
 
-      const s = Math.floor((difference % (1000 * 60)) / 1000)
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
       {
-        s < 10 ? setSeconds('0' + s) : setSeconds(s)
+        s < 10 ? setSeconds('0' + s) : setSeconds(s);
       }
-    }, 1000)
+    }, 1000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="col-span-12 mx-auto md:-mt-150">
@@ -49,7 +51,7 @@ const Timer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Timer
+export default Timer;

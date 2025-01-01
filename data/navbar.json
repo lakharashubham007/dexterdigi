@@ -21,7 +21,6 @@
         "title": "Services",
         "path": "/services",
         "newTab": false
-       
       },
       {
         "id": 4,
@@ -35,8 +34,7 @@
         "path": "/blog",
         "newTab": false
       },
-     
-     
+
       {
         "id": 7,
         "title": "About",

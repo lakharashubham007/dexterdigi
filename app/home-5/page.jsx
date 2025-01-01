@@ -1,18 +1,18 @@
-import Footer from '@/components/footer/Footer'
-import ServiceCardWithLeftText from '@/components/home-4/ServiceCardWithLeftText'
-import EasyStepFeature from '@/components/home-5/EasyStepFeature'
-import Hero from '@/components/home-5/Hero'
-import HostingFeature from '@/components/home-5/HostingFeature'
-import TrustedCompany from '@/components/home-5/TrustedCompany'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import FinancialBlog from '@/components/shared/FinancialBlog'
-import NewsLetter from '@/components/shared/NewsLetter'
-import Pricing from '@/components/shared/Pricing'
-import Testimonial from '@/components/shared/Testimonial'
+import Footer from '@/components/footer/Footer';
+import ServiceCardWithLeftText from '@/components/home-4/ServiceCardWithLeftText';
+import EasyStepFeature from '@/components/home-5/EasyStepFeature';
+import Hero from '@/components/home-5/Hero';
+import HostingFeature from '@/components/home-5/HostingFeature';
+import TrustedCompany from '@/components/home-5/TrustedCompany';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import FinancialBlog from '@/components/shared/FinancialBlog';
+import NewsLetter from '@/components/shared/NewsLetter';
+import Pricing from '@/components/shared/Pricing';
+import Testimonial from '@/components/shared/Testimonial';
 
 export const metadata = {
   title: 'Hosting',
-}
+};
 export default function HomePage5() {
   return (
     <>
@@ -32,5 +32,5 @@ export default function HomePage5() {
       </main>
       <Footer />
     </>
-  )
+  );
 }

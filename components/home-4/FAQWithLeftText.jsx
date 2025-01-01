@@ -1,25 +1,30 @@
-'use client'
-import analyticsDarkFaq from '@/public/images/home-4-img/analytics-faq-dark.png'
-import analyticsFaqShapeDark from '@/public/images/home-4-img/analytics-faq-shape-dark.png'
-import analyticsFaqShape from '@/public/images/home-4-img/analytics-faq-shape.png'
-import analyticsFaq from '@/public/images/home-4-img/analytics-faq.png'
-import Image from 'next/image'
-import { useRef } from 'react'
+'use client';
+import analyticsDarkFaq from '@/public/images/home-4-img/analytics-faq-dark.png';
+import analyticsFaqShapeDark from '@/public/images/home-4-img/analytics-faq-shape-dark.png';
+import analyticsFaqShape from '@/public/images/home-4-img/analytics-faq-shape.png';
+import analyticsFaq from '@/public/images/home-4-img/analytics-faq.png';
+import Image from 'next/image';
+import { useRef } from 'react';
 
-import { fadeFromRightAnimation3, fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { motion } from 'framer-motion'
-import CustomFAQ from './CustomFAQ'
+import { fadeFromRightAnimation3, fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { motion } from 'framer-motion';
+import CustomFAQ from './CustomFAQ';
 
 export default function FAQWithLeftText() {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
 
   return (
     <div className="container relative z-10 pb-[150px] ">
       <div className="grid grid-cols-2 items-start gap-8 max-lg:grid-cols-1">
         <div className="relative flex items-center justify-end max-lg:mb-25 max-lg:justify-center md:mt-12">
-          <motion.figure ref={ref} initial="initial" animate={controlAnimation} variants={fadeUpAnimation}>
+          <motion.figure
+            ref={ref}
+            initial="initial"
+            animate={controlAnimation}
+            variants={fadeUpAnimation}
+          >
             <Image
               src={analyticsFaq}
               alt="banking image"
@@ -39,8 +44,14 @@ export default function FAQWithLeftText() {
             ref={ref}
             initial="initial"
             animate={controlAnimation}
-            variants={fadeFromRightAnimation3}>
-            <Image src={analyticsFaqShape} alt="banking image" className="dark:hidden" placeholder="blur" />
+            variants={fadeFromRightAnimation3}
+          >
+            <Image
+              src={analyticsFaqShape}
+              alt="banking image"
+              className="dark:hidden"
+              placeholder="blur"
+            />
             <Image
               src={analyticsFaqShapeDark}
               alt="banking image"
@@ -63,5 +74,5 @@ export default function FAQWithLeftText() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 export const cryptoMarketItems = [
   {
     id: 1,
@@ -15,7 +15,8 @@ export const cryptoMarketItems = [
   {
     id: 2,
     title: 'Bitcoin source',
-    description: 'Bitcoin was created by an unknown person or group of people using the pseudonym Satoshi Nakamoto.',
+    description:
+      'Bitcoin was created by an unknown person or group of people using the pseudonym Satoshi Nakamoto.',
     link: '/finance-analyse',
     imgLight: '/images/home-7-img/crypto-market-2.png',
     imgDark: '/images/home-7-img/crypto-market-2-dark.png',
@@ -24,7 +25,8 @@ export const cryptoMarketItems = [
   {
     id: 3,
     title: 'Crypto currencies',
-    description: 'Cryptocurrencies are digital or virtual currencies that use cryptography for security.',
+    description:
+      'Cryptocurrencies are digital or virtual currencies that use cryptography for security.',
     link: '/investment-bank',
     imgLight: '/images/home-7-img/crypto-market-3.png',
     imgDark: '/images/home-7-img/crypto-market-3-dark.png',
@@ -40,7 +42,7 @@ export const cryptoMarketItems = [
     imgDark: '/images/home-7-img/crypto-market-4-dark.png',
     isFeatured: false,
   },
-]
+];
 const CryptoMarket = () => {
   return (
     <div className="relative pb-150">
@@ -54,7 +56,10 @@ const CryptoMarket = () => {
         <div className="cryptoMarketItems grid grid-cols-12 gap-8 max-xs:gap-x-0 max-xs:gap-y-8 [&>*:nth-child(2)]:sm:col-span-12 [&>*:nth-child(2)]:lg:col-span-4">
           {cryptoMarketItems.map((items) =>
             items.isFeatured ? (
-              <div className="col-span-12 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200" key={items.id}>
+              <div
+                className="col-span-12 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
+                key={items.id}
+              >
                 <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5 ">
                   <div className="grid grid-cols-12 gap-6 ">
                     <div className="col-span-12 md:col-span-6 1xl:col-span-7 1xl:pr-20">
@@ -86,7 +91,8 @@ const CryptoMarket = () => {
             ) : (
               <div
                 className="col-span-12 rounded-medium  bg-white p-2.5 shadow-nav dark:bg-dark-200 sm:col-span-6 lg:col-span-4"
-                key={items.id}>
+                key={items.id}
+              >
                 <div className="flex h-full flex-col rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                   <div className="cryptoMarketItems-image">
                     <Image
@@ -113,12 +119,12 @@ const CryptoMarket = () => {
                   </div>
                 </div>
               </div>
-            ),
+            )
           )}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CryptoMarket
+export default CryptoMarket;

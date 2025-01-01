@@ -1,15 +1,15 @@
-'use client'
-import FaqList from '@/data/faqData'
-import { useState } from 'react'
-import FaqItem from '../shared/FaqItem'
+'use client';
+import FaqList from '@/data/faqData';
+import { useState } from 'react';
+import FaqItem from '../shared/FaqItem';
 
 const CustomFAQ = () => {
-  const { FAQData } = FaqList
-  const [activeIndex, setActiveIndex] = useState(null)
+  const { FAQData } = FaqList;
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
-  }
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <section className="relative pb-150  max-md:overflow-hidden">
@@ -29,7 +29,7 @@ const CustomFAQ = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CustomFAQ
+export default CustomFAQ;

@@ -1,8 +1,9 @@
-import { Behance, Facebook, Github, LinkedIn } from './svgImages'
+import { Behance, Facebook, Github, LinkedIn } from './svgImages';
 export const FooterData = {
   logo: '/images/newlogolight.png',
   logoDark: '/images/newlogodark.png',
-  footerText: 'Now turn your idea into technology and build your dream business with latest technology.',
+  footerText:
+    'Now turn your idea into technology and build your dream business with latest technology.',
   copyright: `${new Date().getFullYear()} DexterDigi. All Rights Reserved`,
   email: 'info@dexterdigi.com',
   phone: '+91 800-5874-335',
@@ -27,7 +28,7 @@ export const FooterData = {
     //   name: 'Payment',
     //   link: '/home-2',
     // },
-    
+
     // {
     //   id: 7,
     //   name: 'Testimonials',
@@ -55,7 +56,7 @@ export const FooterData = {
       name: 'Pricing',
       link: '/price',
     },
-    
+
     // {
     //   id: 3,
     //   name: 'Integration',
@@ -105,4 +106,4 @@ export const FooterData = {
       link: '#',
     },
   ],
-}
+};

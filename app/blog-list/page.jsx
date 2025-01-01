@@ -1,23 +1,26 @@
-import BlogSearch from '@/components/blogs/BlogSearch'
-import Footer from '@/components/footer/Footer'
-import PrimaryNavbar from '@/components/navbar/PrimaryNavbar'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import PageHero from '@/components/shared/PageHero'
-import getMarkDownData from '@/utils/getMarkDownData'
+import BlogSearch from '@/components/blogs/BlogSearch';
+import Footer from '@/components/footer/Footer';
+import PrimaryNavbar from '@/components/navbar/PrimaryNavbar';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import PageHero from '@/components/shared/PageHero';
+import getMarkDownData from '@/utils/getMarkDownData';
 
 export const metadata = {
   title: 'Blog-list',
-}
+};
 
 const BlogListPage = () => {
-  const blogs = getMarkDownData('content/blogs')
+  const blogs = getMarkDownData('content/blogs');
 
   return (
     <>
       {/* <SecondaryNavbar /> */}
       <PrimaryNavbar />
       <main>
-        <PageHero subtitle="BLOG LIST" title="Recent blogs created <br/> by DrexterDigi" />
+        <PageHero
+          subtitle="BLOG LIST"
+          title="Recent blogs created <br/> by DrexterDigi"
+        />
         <section className="relative mb-150">
           <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="container relative">
@@ -32,7 +35,7 @@ const BlogListPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default BlogListPage
+export default BlogListPage;

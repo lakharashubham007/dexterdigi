@@ -18,7 +18,7 @@ const ProjectCards = ({ activeFilter }) => {
       ? ProjectData // Show all projects if 'ALL' is selected
       : ProjectData?.filter((project) => project?.category === activeFilter);
 
-      console.log(filteredProjects,"filteredProjects")
+  console.log(filteredProjects, 'filteredProjects');
 
   return (
     <motion.div
@@ -26,12 +26,14 @@ const ProjectCards = ({ activeFilter }) => {
       ref={ref}
       initial="initial"
       animate={controlAnimation}
-      variants={fadeUpAnimation}>
+      variants={fadeUpAnimation}
+    >
       {filteredProjects.length > 0 ? (
         filteredProjects.map((project) => (
           <div
             className="relative scale-100 rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-            key={project.id}>
+            key={project.id}
+          >
             <div className="h-full rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
               <Image
                 src={project.iconLight}
@@ -51,54 +53,32 @@ const ProjectCards = ({ activeFilter }) => {
                 <h3 className="mb-2.5">{project.title}</h3>
               </Link>
               <p className="mb-6">{project.excerpt}</p>
-              <Link href={`/portfolio/${project.slug}`} className="btn-outline btn-sm">
+              <Link
+                href={`/portfolio/${project.slug}`}
+                className="btn-outline btn-sm"
+              >
                 Read More
               </Link>
             </div>
           </div>
         ))
       ) : (
-        <>       
-         <div
+        <>
+          <div
             className="relative scale-100 rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-            key={'id'}>
+            key={'id'}
+          >
             <div className="h-full rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
-              
-             
               <p className="mb-6">No Projects available.</p>
-              
-                
-            
             </div>
           </div>
-</>
+        </>
       )}
     </motion.div>
   );
 };
 
 export default ProjectCards;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 'use client';
 // import { fadeUpAnimation } from '@/data/animation';

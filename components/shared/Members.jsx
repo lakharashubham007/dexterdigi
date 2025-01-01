@@ -1,11 +1,11 @@
-import teamMembers from '@/data/team'
+import teamMembers from '@/data/team';
 
-import Image from 'next/image'
-import Link from 'next/link'
-import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation'
+import Image from 'next/image';
+import Link from 'next/link';
+import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation';
 
 const Members = () => {
-  const { teamData } = teamMembers
+  const { teamData } = teamMembers;
   return (
     <div className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
       {teamData.slice(0, 3).map((member, i) => (
@@ -25,19 +25,23 @@ const Members = () => {
             <Link href={`/teams/${member.id}`}>
               <h3 className="mb-2">{member.name}</h3>
             </Link>
-            <p className="mb-6 text-sm font-medium leading-[1.5]">{member.designation}</p>
+            <p className="mb-6 text-sm font-medium leading-[1.5]">
+              {member.designation}
+            </p>
             <ul className="flex items-center justify-center gap-x-2.5">
               <li>
                 <Link
                   href={member.fbLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -59,14 +63,16 @@ const Members = () => {
               <li>
                 <Link
                   href={member.dribbleInLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -90,14 +96,16 @@ const Members = () => {
               <li>
                 <Link
                   href={member.gitHubLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -119,14 +127,16 @@ const Members = () => {
               <li>
                 <Link
                   href={member.linkedInLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -149,7 +159,7 @@ const Members = () => {
         </FadeUpOneByOneAnimation>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Members
+export default Members;

@@ -1,11 +1,11 @@
-import TestimonialList from '@/data/testimonial'
-import Image from 'next/image'
-import React from 'react'
-import TestmonialBg from '../icons/TestmonialBg'
-import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation'
+import TestimonialList from '@/data/testimonial';
+import Image from 'next/image';
+import React from 'react';
+import TestmonialBg from '../icons/TestmonialBg';
+import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation';
 
 const TestimonialV2 = () => {
-  const { TestimonialData } = TestimonialList
+  const { TestimonialData } = TestimonialList;
   return (
     <section className=" relative overflow-hidden pb-25 pt-25">
       <div className="container relative">
@@ -22,7 +22,8 @@ const TestimonialV2 = () => {
               <FadeUpOneByOneAnimation
                 i={i}
                 className="rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
-                key={testimonial.id}>
+                key={testimonial.id}
+              >
                 <div className="h-full rounded border border-dashed border-gray-100 p-8 dark:border-borderColor-dark">
                   <div className="flex items-center pb-7 ">
                     <Image
@@ -33,7 +34,9 @@ const TestimonialV2 = () => {
                       height={56}
                     />
                     <div className="block">
-                      <h3 className="text-base font-semibold">{testimonial.author.name}</h3>
+                      <h3 className="text-base font-semibold">
+                        {testimonial.author.name}
+                      </h3>
                       <p className="font-jakarta_sans text-sm  font-medium text-paragraph-light dark:text-[#A1A49D]">
                         {testimonial.author.designation}
                       </p>
@@ -60,7 +63,9 @@ const TestimonialV2 = () => {
                         height={35}
                       />
                     </div>
-                    <p className="text-sm text-paragraph-light dark:text-paragraph-light">{testimonial.date}</p>
+                    <p className="text-sm text-paragraph-light dark:text-paragraph-light">
+                      {testimonial.date}
+                    </p>
                   </div>
                 </div>
               </FadeUpOneByOneAnimation>
@@ -69,7 +74,7 @@ const TestimonialV2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialV2
+export default TestimonialV2;

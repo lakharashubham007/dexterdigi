@@ -1,12 +1,12 @@
-'use client'
+'use client';
 import { useState } from 'react';
-import ServiceBoxes from './ServiceBoxes'
-import ProjectCards from './ProjectCards'
+import ServiceBoxes from './ServiceBoxes';
+import ProjectCards from './ProjectCards';
 
 const Services = ({ sectionDetails = true }) => {
   const [activeFilter, setActiveFilter] = useState('ALL');
 
-  const filters = ['ALL', 'Web Development', 'Mobile',];
+  const filters = ['ALL', 'Web Development', 'Mobile'];
   return (
     <section className="relative bg-white pb-150 dark:bg-dark-300 sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
@@ -20,8 +20,9 @@ const Services = ({ sectionDetails = true }) => {
                 trust aplio.
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not
-                Latin, though it looks like it
+                Until recently, the prevailing view assumed lorem ipsum was born
+                as a nonsense text. It&rsquo;s not Latin, though it looks like
+                it
               </p>
             </div>
           </div>
@@ -51,7 +52,7 @@ const Services = ({ sectionDetails = true }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,15 +1,15 @@
-'use client'
-import FaqList from '@/data/faqData'
-import { useState } from 'react'
-import FaqItem from './FaqItem'
+'use client';
+import FaqList from '@/data/faqData';
+import { useState } from 'react';
+import FaqItem from './FaqItem';
 
 const FaQuestion = () => {
-  const { FAQData } = FaqList
-  const [activeIndex, setActiveIndex] = useState(null)
+  const { FAQData } = FaqList;
+  const [activeIndex, setActiveIndex] = useState(null);
   const handleItemClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
-  }
-  const generalFaq = FAQData.filter((faq) => faq.type.includes('general'))
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const generalFaq = FAQData.filter((faq) => faq.type.includes('general'));
   return (
     <div className="[&>*:not(:last-child)]:mb-5">
       {generalFaq.map((faq) => (
@@ -22,7 +22,7 @@ const FaQuestion = () => {
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default FaQuestion
+export default FaQuestion;

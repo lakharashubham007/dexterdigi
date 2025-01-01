@@ -1,9 +1,9 @@
-import IntegrationList from '@/data/integrationData'
-import Image from 'next/image'
-import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation'
+import IntegrationList from '@/data/integrationData';
+import Image from 'next/image';
+import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation';
 
 const TopIntegration = () => {
-  const { IntegrationData } = IntegrationList
+  const { IntegrationData } = IntegrationList;
   return (
     <section>
       <div className="mb-[100px] text-center">
@@ -12,8 +12,8 @@ const TopIntegration = () => {
           Make productivity easier with 50+ <br /> Integrations
         </h2>
         <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">
-          Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not Latin
-          though it looks like nothing.
+          Until recently, the prevailing view assumed lorem ipsum was born as a
+          nonsense text. It&apos;s not Latin though it looks like nothing.
         </p>
       </div>
 
@@ -31,7 +31,8 @@ const TopIntegration = () => {
                 <FadeUpOneByOneAnimation
                   i={i}
                   className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
-                  key={items.id}>
+                  key={items.id}
+                >
                   <div className="rounded border border-dashed border-gray-100 p-10 text-center dark:border-borderColor-dark ">
                     <Image
                       src={items.image}
@@ -50,7 +51,7 @@ const TopIntegration = () => {
         </div>
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default TopIntegration
+export default TopIntegration;

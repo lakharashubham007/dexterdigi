@@ -1,15 +1,15 @@
-import Footer from '@/components/footer/Footer'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import Counter from '@/components/shared/Counter'
-import Faq from '@/components/shared/Faq'
-import NewsLetter from '@/components/shared/NewsLetter'
-import PageHero from '@/components/shared/PageHero'
-import TestimonialSlider from '@/components/shared/TestimonialSlider'
-import TeamMemberAnimation from '@/components/team/TeamMemberAnimation'
+import Footer from '@/components/footer/Footer';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import Counter from '@/components/shared/Counter';
+import Faq from '@/components/shared/Faq';
+import NewsLetter from '@/components/shared/NewsLetter';
+import PageHero from '@/components/shared/PageHero';
+import TestimonialSlider from '@/components/shared/TestimonialSlider';
+import TeamMemberAnimation from '@/components/team/TeamMemberAnimation';
 
 export const metadata = {
   title: 'Our Teams',
-}
+};
 
 const Teams = () => {
   return (
@@ -41,7 +41,7 @@ const Teams = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Teams
+export default Teams;

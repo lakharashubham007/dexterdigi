@@ -1,11 +1,11 @@
-import FadeUpAnimation from '@/components/animations/FadeUpAnimation'
-import Footer from '@/components/footer/Footer'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import NewsLetter from '@/components/shared/NewsLetter'
+import FadeUpAnimation from '@/components/animations/FadeUpAnimation';
+import Footer from '@/components/footer/Footer';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import NewsLetter from '@/components/shared/NewsLetter';
 
 export const metadata = {
   title: 'Forget Password',
-}
+};
 
 const ForgetPassword = () => {
   return (
@@ -32,7 +32,8 @@ const ForgetPassword = () => {
                       <div className="col-span-full">
                         <label
                           htmlFor="newpassword"
-                          className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                          className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                        >
                           New Password
                         </label>
                         <input
@@ -46,7 +47,8 @@ const ForgetPassword = () => {
                       <div className="col-span-full">
                         <label
                           htmlFor="confirmpassword"
-                          className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                          className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                        >
                           Confirm Password
                         </label>
                         <input
@@ -58,7 +60,9 @@ const ForgetPassword = () => {
                         />
                       </div>
                       <div className="col-span-full ">
-                        <button className="btn block w-full">Reset Password</button>
+                        <button className="btn block w-full">
+                          Reset Password
+                        </button>
                       </div>
                     </div>
                   </form>
@@ -71,7 +75,7 @@ const ForgetPassword = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default ForgetPassword
+export default ForgetPassword;

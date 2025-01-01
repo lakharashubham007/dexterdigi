@@ -1,11 +1,11 @@
-import { cn } from '@/utils/cn'
-import getMarkDownData from '@/utils/getMarkDownData'
-import Image from 'next/image'
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
+import { cn } from '@/utils/cn';
+import getMarkDownData from '@/utils/getMarkDownData';
+import Image from 'next/image';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 const FinancialBlog = ({ className = 'dark:bg-dark pb-150 pt-150' }) => {
-  const blogs = getMarkDownData('content/blogs')
+  const blogs = getMarkDownData('content/blogs');
 
   return (
     <section className={cn('relative bg-white max-md:pb-20', className)}>
@@ -25,7 +25,8 @@ const FinancialBlog = ({ className = 'dark:bg-dark pb-150 pt-150' }) => {
             {blogs?.slice(0, 3).map((blogItems) => (
               <article
                 className="cursor-pointer rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-                key={blogItems.slug}>
+                key={blogItems.slug}
+              >
                 <div className="h-full rounded border border-dashed border-gray-100 p-6 dark:border-borderColor-dark">
                   <Image
                     src={blogItems.data.thumbnail}
@@ -35,22 +36,41 @@ const FinancialBlog = ({ className = 'dark:bg-dark pb-150 pt-150' }) => {
                     height={198}
                   />
                   <div>
-                    <Link href={`/tags/${blogItems.data.tags}`} className="badge">
+                    <Link
+                      href={`/tags/${blogItems.data.tags}`}
+                      className="badge"
+                    >
                       {blogItems.data.tags}
                     </Link>
                     <Link href={`/blog/${blogItems.slug}`} className="block">
-                      <h3 className="mb-3 font-semibold leading-[1.33]">{blogItems.data.title}</h3>
+                      <h3 className="mb-3 font-semibold leading-[1.33]">
+                        {blogItems.data.title}
+                      </h3>
                     </Link>
                     <div className="mb-4 flex items-center gap-x-2 ">
                       <p>{blogItems.data.author}</p>
                       <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                          <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="5"
+                          height="6"
+                          viewBox="0 0 5 6"
+                          fill="none"
+                        >
+                          <circle
+                            cx="2.5"
+                            cy="3"
+                            r="2.5"
+                            fill=""
+                            className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                          />
                         </svg>
                       </span>
                       <p>{blogItems.data.date}</p>
                     </div>
-                    <ReactMarkdown>{blogItems.content.slice(0, 70)}</ReactMarkdown>
+                    <ReactMarkdown>
+                      {blogItems.content.slice(0, 70)}
+                    </ReactMarkdown>
                   </div>
                 </div>
               </article>
@@ -59,7 +79,7 @@ const FinancialBlog = ({ className = 'dark:bg-dark pb-150 pt-150' }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FinancialBlog
+export default FinancialBlog;

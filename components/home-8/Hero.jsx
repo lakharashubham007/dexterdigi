@@ -1,26 +1,27 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
-import ReactPlayer from 'react-player'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faX } from '@fortawesome/free-solid-svg-icons'
-import FadeUpAnimation from '../animations/FadeUpAnimation'
-import footerSeperator from '@/public/images/footer-seperator.svg'
-import footerSeperatorDark from '@/public/images/footer-seperator-dark.svg'
-import shapeCode from '@/public/images/home-8-img/hero-shape-code.png'
-import shapeVideo from '@/public/images/home-8-img/hero-shape-video.png'
-import shapePhoto from '@/public/images/home-8-img/hero-shape-photo.png'
-import videoBG from '@/public/images/home-8-img/ai-hero.png'
-import buttonImg from '@/public/images/home-8-img/play.svg'
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import ReactPlayer from 'react-player';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+import FadeUpAnimation from '../animations/FadeUpAnimation';
+import footerSeperator from '@/public/images/footer-seperator.svg';
+import footerSeperatorDark from '@/public/images/footer-seperator-dark.svg';
+import shapeCode from '@/public/images/home-8-img/hero-shape-code.png';
+import shapeVideo from '@/public/images/home-8-img/hero-shape-video.png';
+import shapePhoto from '@/public/images/home-8-img/hero-shape-photo.png';
+import videoBG from '@/public/images/home-8-img/ai-hero.png';
+import buttonImg from '@/public/images/home-8-img/play.svg';
 
 const Hero = () => {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   const openModal = (e) => {
-    e.preventDefault()
-    setModal(!modal)
-  }
-  const videoLink = 'https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh'
+    e.preventDefault();
+    setModal(!modal);
+  };
+  const videoLink =
+    'https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh';
   return (
     <>
       {modal ? (
@@ -31,7 +32,12 @@ const Hero = () => {
                 <FontAwesomeIcon icon={faX} />
               </span>
               <div className="modal-video-align">
-                <ReactPlayer url={videoLink} className="modal-video-item" width="100%" height="100%" />
+                <ReactPlayer
+                  url={videoLink}
+                  className="modal-video-item"
+                  width="100%"
+                  height="100%"
+                />
               </div>
             </div>
           </div>
@@ -39,7 +45,13 @@ const Hero = () => {
       ) : null}
       <section className="hero crypto-hero relative cursor-fancy overflow-hidden bg-white pb-10 pt-[230px] dark:bg-dark-300 max-lg:pb-10 max-lg:pt-[160px]">
         <div className="absolute left-1/2 top-0 max-w-full -translate-x-1/2  dark:hidden">
-          <svg width="1920" height="880" viewBox="0 0 1920 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="1920"
+            height="880"
+            viewBox="0 0 1920 880"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M0 0H1920V880H0V0Z" fill="url(#paint0_linear_641_4990)" />
             <g opacity="0.5">
               <mask
@@ -49,8 +61,14 @@ const Hero = () => {
                 x="0"
                 y="0"
                 width="1920"
-                height="880">
-                <rect width="1920" height="880" fill="" className="fill-gray-50" />
+                height="880"
+              >
+                <rect
+                  width="1920"
+                  height="880"
+                  fill=""
+                  className="fill-gray-50"
+                />
               </mask>
               <g mask="url(#mask0_641_4990)">
                 <path
@@ -74,7 +92,8 @@ const Hero = () => {
                 y1="-20"
                 x2="960"
                 y2="880"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#F3FDD9" stopOpacity="0.1" />
                 <stop offset="0.5" stopColor="#F3FDD9" />
                 <stop offset="0.98" stopColor="#F3FDD9" stopOpacity="0.1" />
@@ -85,7 +104,8 @@ const Hero = () => {
                 y1="451"
                 x2="959.55"
                 y2="901.8"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#D9E0C5" stopOpacity="0.9" />
                 <stop offset="0.694321" stopColor="#D9E0C5" stopOpacity="0" />
               </linearGradient>
@@ -95,7 +115,8 @@ const Hero = () => {
                 y1="451"
                 x2="959.55"
                 y2="0.199982"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#D9E0C5" stopOpacity="0.9" />
                 <stop offset="0.694321" stopColor="#D9E0C5" stopOpacity="0" />
               </linearGradient>
@@ -103,7 +124,13 @@ const Hero = () => {
           </svg>
         </div>
         <div className="absolute left-1/2 top-0 hidden max-w-full -translate-x-1/2 dark:block">
-          <svg width="1920" height="880" viewBox="0 0 1920 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="1920"
+            height="880"
+            viewBox="0 0 1920 880"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M0 0H1920V880H0V0Z" fill="url(#paint0_linear_1119_5836)" />
             <g opacity="0.5">
               <mask
@@ -113,8 +140,14 @@ const Hero = () => {
                 x="0"
                 y="0"
                 width="1920"
-                height="880">
-                <rect width="1920" height="880" fill="" className="fill-gray-50" />
+                height="880"
+              >
+                <rect
+                  width="1920"
+                  height="880"
+                  fill=""
+                  className="fill-gray-50"
+                />
               </mask>
               <g mask="url(#mask0_1119_5836)">
                 <path
@@ -138,7 +171,8 @@ const Hero = () => {
                 y1="-20"
                 x2="960"
                 y2="880"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#131410" stopOpacity="0.1" />
                 <stop offset="0.5" stopColor="#131410" />
                 <stop offset="0.98" stopColor="#131410" stopOpacity="0.1" />
@@ -149,7 +183,8 @@ const Hero = () => {
                 y1="451"
                 x2="959.55"
                 y2="901.8"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#D9E0C5" stopOpacity="0.1" />
                 <stop offset="0.694321" stopColor="#D9E0C5" stopOpacity="0" />
               </linearGradient>
@@ -159,7 +194,8 @@ const Hero = () => {
                 y1="451"
                 x2="959.55"
                 y2="0.199982"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stopColor="#D9E0C5" stopOpacity="0.1" />
                 <stop offset="0.694321" stopColor="#D9E0C5" stopOpacity="0" />
               </linearGradient>
@@ -187,14 +223,17 @@ const Hero = () => {
                   className="absolute -right-25 bottom-0 animate-floatingDown max-1xl:right-0 max-md:hidden"
                 />
 
-                <p className="mb-8 font-medium uppercase max-lg:mb-4">AI Software</p>
+                <p className="mb-8 font-medium uppercase max-lg:mb-4">
+                  AI Software
+                </p>
                 <h1 className="mb-12 max-md:mb-8">
                   Easily create professional <br />
                   websites.
                 </h1>
                 <p className="mx-auto mb-12 max-w-[590px] max-md:mb-8">
-                  Create stunning websites in moments, filled with engaging content and images. Create impressive
-                  websites in no time, with engaging content and visuals included.
+                  Create stunning websites in moments, filled with engaging
+                  content and images. Create impressive websites in no time,
+                  with engaging content and visuals included.
                 </p>
                 <div className=" mx-auto mb-10 flex items-center justify-center gap-4  max-md:flex-col">
                   <Link href="/contact" className="btn cursor-fancy">
@@ -202,14 +241,19 @@ const Hero = () => {
                   </Link>
                   <Link
                     href="/price "
-                    className="btn-outline cursor-fancy bg-white dark:!bg-white dark:!text-paragraph">
+                    className="btn-outline cursor-fancy bg-white dark:!bg-white dark:!text-paragraph"
+                  >
                     View plan and pricing
                   </Link>
                 </div>
               </div>
 
               <div className="seperator">
-                <Image src={footerSeperator} alt="footer-seperator" className="w-full object-cover dark:hidden" />
+                <Image
+                  src={footerSeperator}
+                  alt="footer-seperator"
+                  className="w-full object-cover dark:hidden"
+                />
                 <Image
                   src={footerSeperatorDark}
                   alt="footer-seperator dark"
@@ -219,8 +263,20 @@ const Hero = () => {
 
               <ul className=" mx-auto mt-20 flex max-w-[815px] items-center justify-between max-lg:mt-5 max-md:flex-col max-md:gap-5">
                 <li className="flex items-center gap-3.5">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="20" height="20" rx="10" fill="" className="fill-primary" />
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      rx="10"
+                      fill=""
+                      className="fill-primary"
+                    />
                     <path
                       d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
                       fill=""
@@ -231,8 +287,20 @@ const Hero = () => {
                   <p>No Credit Card Required</p>
                 </li>
                 <li className="flex items-center gap-3.5">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="20" height="20" rx="10" fill="" className="fill-primary" />
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      rx="10"
+                      fill=""
+                      className="fill-primary"
+                    />
                     <path
                       d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
                       fill=""
@@ -242,8 +310,20 @@ const Hero = () => {
                   <p>Free For 30 Day Trial.</p>
                 </li>
                 <li className="flex items-center gap-3.5">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="20" height="20" rx="10" fill="" className="fill-primary" />
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      rx="10"
+                      fill=""
+                      className="fill-primary"
+                    />
                     <path
                       d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
                       fill=""
@@ -254,7 +334,7 @@ const Hero = () => {
                 </li>
               </ul>
             </FadeUpAnimation>
-            
+
             {/* <FadeUpAnimation className="relative col-span-12 mx-auto xl:col-span-11 xl:col-start-2">
               <div className="relative z-10">
                 <div className="absolute left-1/2 top-32 -z-10 h-[330px] w-10/12 -translate-x-1/2 rounded-full bg-primary-200/20 blur-[80px] dark:bg-primary-200/20  max-lg:top-8 max-md:-top-32 max-md:w-[330px] xl:h-[442px] 1xl:h-[442px] "></div>
@@ -274,7 +354,7 @@ const Hero = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

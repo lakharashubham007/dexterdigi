@@ -1,7 +1,7 @@
-'use client'
-import Link from 'next/link'
-import { Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+'use client';
+import Link from 'next/link';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Integration = () => {
   const sliderItems = [
@@ -45,17 +45,19 @@ const Integration = () => {
       id: 10,
       image: 'images/reddit.png',
     },
-  ]
+  ];
   return (
     <section className="bg-white pt-150  dark:bg-dark-300 max-md:pb-20">
       <div className="container relative z-10">
         <div className="mx-auto mb-10 max-w-[620px] text-center">
           <p className="section-tagline">Top Integration</p>
 
-          <h2 className="mb-8">Make productivity easier with 50+ Integrations</h2>
+          <h2 className="mb-8">
+            Make productivity easier with 50+ Integrations
+          </h2>
           <p className="mb-10">
-            Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&lsquo;s not Latin
-            though it looks like nothing.
+            Until recently, the prevailing view assumed lorem ipsum was born as
+            a nonsense text. It&lsquo;s not Latin though it looks like nothing.
           </p>
 
           <Link href="/contact" className="btn-outline">
@@ -85,12 +87,20 @@ const Integration = () => {
             },
           }}
           className="swiper container"
-          id="integration">
+          id="integration"
+        >
           {sliderItems?.map((items) => (
-            <SwiperSlide className="swiper-slide group !flex aspect-square !items-center" key={items.id}>
+            <SwiperSlide
+              className="swiper-slide group !flex aspect-square !items-center"
+              key={items.id}
+            >
               <div className=" mx-auto aspect-square w-20 origin-center  scale-100 rounded-full bg-white p-2.5 shadow-box transition-transform duration-500 group-[.swiper-slide-active]:scale-150  group-[.swiper-slide-active]:transition-transform group-[.swiper-slide-active]:duration-500 dark:bg-dark-200">
                 <div className="flex aspect-square items-center justify-center rounded-full border border-dashed border-gray-100 text-center dark:border-borderColor-dark">
-                  <img src={items.image} alt="value image" className="inline-block h-8 w-8" />
+                  <img
+                    src={items.image}
+                    alt="value image"
+                    className="inline-block h-8 w-8"
+                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -98,7 +108,7 @@ const Integration = () => {
         </Swiper>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Integration
+export default Integration;

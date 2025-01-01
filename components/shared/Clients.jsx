@@ -1,10 +1,10 @@
-import ClientList from '@/data/clientData'
-import { cn } from '@/utils/cn'
-import Image from 'next/image'
-import Link from 'next/link'
-import Marquee from 'react-fast-marquee'
-import clientBorderDark from '../../public/images/clients/client-border-dark.svg'
-import clientBorder from '../../public/images/clients/client-border.svg'
+import ClientList from '@/data/clientData';
+import { cn } from '@/utils/cn';
+import Image from 'next/image';
+import Link from 'next/link';
+import Marquee from 'react-fast-marquee';
+import clientBorderDark from '../../public/images/clients/client-border-dark.svg';
+import clientBorder from '../../public/images/clients/client-border.svg';
 
 const Clients = ({
   sectionTitle = true,
@@ -12,13 +12,21 @@ const Clients = ({
   border = true,
   className = 'pt-[10px] pb-[145px] max-lg:py-20 bg-white dark:bg-dark-300 ',
 }) => {
-  const { ClientData } = ClientList
+  const { ClientData } = ClientList;
   return (
     <section className={cn('client', className)}>
       <div className="container overflow-hidden max-lg:!px-0">
         <div className=" px-10px mx-auto max-w-[550px] text-center max-lg:px-2.5">
-          {sectionTitle && <h2 className="mb-10">The world&rsquo;s best companies trust Drexterdigi</h2>}
-          {sectionDetails && <p className="text-light mb-15">Trusted by thousands of companies across 50+ countries</p>}
+          {sectionTitle && (
+            <h2 className="mb-10">
+              The world&rsquo;s best companies trust Drexterdigi
+            </h2>
+          )}
+          {sectionDetails && (
+            <p className="text-light mb-15">
+              Trusted by thousands of companies across 50+ countries
+            </p>
+          )}
         </div>
 
         <div className="relative py-8 before:absolute before:-right-0.5 before:top-1/2 before:z-10 before:h-[40px] before:w-[120px] before:-translate-y-1/2  before:bg-gradient-to-l before:from-white before:from-[37.5%] after:absolute after:-left-0.5 after:top-1/2 after:z-10 after:h-[40px] after:w-[120px] after:-translate-y-1/2  after:bg-gradient-to-r after:from-white  after:from-[37.5%] dark:before:from-dark-gradient dark:after:from-dark-gradient">
@@ -39,7 +47,10 @@ const Clients = ({
 
           <Marquee pauseOnHover>
             {ClientData.map((clients) => (
-              <div className="marquee-content-list relative w-[215px] overflow-y-hidden" key={clients.id}>
+              <div
+                className="marquee-content-list relative w-[215px] overflow-y-hidden"
+                key={clients.id}
+              >
                 <Image
                   src={clients.imageLight}
                   alt="group"
@@ -67,7 +78,7 @@ const Clients = ({
         )}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;

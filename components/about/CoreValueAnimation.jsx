@@ -1,26 +1,27 @@
-'use client'
-import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import imageOnlineValueDark from '@/public/images/about/team.jpg'
-import imageShapeDark from '@/public/images/about/uidesign.jpg'
-import imageShape from '@/public/images/about/team.jpg'
-import imageOnlineValue from '@/public/images/about/uidesign.jpg'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { useRef } from 'react'
+'use client';
+import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import imageOnlineValueDark from '@/public/images/about/team.jpg';
+import imageShapeDark from '@/public/images/about/uidesign.jpg';
+import imageShape from '@/public/images/about/team.jpg';
+import imageOnlineValue from '@/public/images/about/uidesign.jpg';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
 
 const CoreValueAnimation = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
-  const ref2 = useRef(null)
-  const controlAnimation2 = useWhileInView(ref2)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
+  const ref2 = useRef(null);
+  const controlAnimation2 = useWhileInView(ref2);
   return (
     <motion.div
       className="relative flex items-center justify-end max-md:justify-center"
       ref={ref}
       initial="initial"
       animate={controlAnimation}
-      variants={fadeUpAnimation}>
+      variants={fadeUpAnimation}
+    >
       <Image
         src={imageOnlineValue}
         alt="banking image"
@@ -36,14 +37,19 @@ const CoreValueAnimation = () => {
         ref={ref2}
         initial="initial"
         animate={controlAnimation2}
-        variants={fadeFromRightAnimation}>
+        variants={fadeFromRightAnimation}
+      >
         <Image src={imageShape} alt="banking image" className="dark:hidden" />
-        <Image src={imageShapeDark} alt="banking image" className="hidden dark:inline-block " />
+        <Image
+          src={imageShapeDark}
+          alt="banking image"
+          className="hidden dark:inline-block "
+        />
       </motion.div>
 
       <div className="absolute bottom-8 left-0 right-auto top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"></div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default CoreValueAnimation
+export default CoreValueAnimation;

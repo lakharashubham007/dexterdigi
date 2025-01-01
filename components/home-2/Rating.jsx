@@ -1,5 +1,5 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Rating = () => {
   const PaymentRatingData = [
@@ -21,7 +21,7 @@ const Rating = () => {
       name: 'Trustpilot',
       desc: 'Top Payment Company',
     },
-  ]
+  ];
   return (
     <section>
       <div className="container">
@@ -38,11 +38,17 @@ const Rating = () => {
               {PaymentRatingData.map((item) => (
                 <div
                   className=" rounded border border-dashed border-gray-100 px-7 py-12 text-center dark:border-borderColor-dark"
-                  key={item.id}>
+                  key={item.id}
+                >
                   <h3 className="mb-5 text-[48px]">{item.rating}</h3>
                   <div className="mb-4">
                     {Array(Math.round(item.rating))
-                      .fill(<FontAwesomeIcon icon={faStar} className="text-[#FFC107]" />)
+                      .fill(
+                        <FontAwesomeIcon
+                          icon={faStar}
+                          className="text-[#FFC107]"
+                        />
+                      )
                       .map((star, i) => (
                         <span key={i}>
                           {star}
@@ -59,7 +65,7 @@ const Rating = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Rating
+export default Rating;

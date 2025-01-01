@@ -1,11 +1,12 @@
-import line from '@/public/images/home-7-img/line.png'
-import Image from 'next/image'
+import line from '@/public/images/home-7-img/line.png';
+import Image from 'next/image';
 const TimeLineCard = ({ title, yearRange, item, i }) => {
   return (
     <li className="stack-cards--item js-stack-cards--item cardContainer">
       <div
         className="relative flex items-center gap-2.5 md:gap-5 lg:gap-20"
-        style={{ top: `calc(-5vh + ${i * 25}px)` }}>
+        style={{ top: `calc(-5vh + ${i * 25}px)` }}
+      >
         <div className="item-center relative flex shrink-0 justify-center">
           <div className="relative  w-[240px] rounded-medium   bg-white p-2.5 shadow-nav dark:bg-dark-200 max-md:w-auto max-xs:p-2">
             <div className="flex w-full items-center justify-center rounded border border-dashed border-gray-100 dark:border-borderColor-dark max-1xl:p-5 max-xs:p-2 1xl:p-10">
@@ -34,7 +35,7 @@ const TimeLineCard = ({ title, yearRange, item, i }) => {
         </div>
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default TimeLineCard
+export default TimeLineCard;

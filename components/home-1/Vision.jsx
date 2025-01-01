@@ -1,12 +1,12 @@
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
-import VisionLine1 from '../icons/VisionLine1'
-import VisionLine2 from '../icons/VisionLine2'
-import VisionLine3 from '../icons/VisionLine3'
-import VisionLine4 from '../icons/VisionLine4'
-import VisionAnimation from './VisionAnimation'
+import VisionLine1 from '../icons/VisionLine1';
+import VisionLine2 from '../icons/VisionLine2';
+import VisionLine3 from '../icons/VisionLine3';
+import VisionLine4 from '../icons/VisionLine4';
+import VisionAnimation from './VisionAnimation';
 
 const Vision = () => {
   return (
@@ -27,10 +27,12 @@ const Vision = () => {
         <div className="grid grid-cols-2 items-end gap-10 max-md:grid-cols-1 1xl:gap-x-24">
           <div>
             <p className="section-tagline">Data Integrations</p>
-            <h2 className="mb-8 max-lg:mb-4">A strong vision is crucial for the analysis of wealth.</h2>
+            <h2 className="mb-8 max-lg:mb-4">
+              A strong vision is crucial for the analysis of wealth.
+            </h2>
             <p className="mb-11 max-lg:mb-5">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After
-              magazine.
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text nothing Before & After magazine.
             </p>
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-lg:[&>*:not(:last-child)]:mb-4 ">
               <li className="flex items-center gap-x-2 ">
@@ -40,7 +42,9 @@ const Vision = () => {
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                   />
                 </span>
-                <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
+                <span className="font-jakarta_sans font-medium dark:text-white">
+                  Guided Payment Procurement
+                </span>
               </li>
               <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
@@ -49,7 +53,9 @@ const Vision = () => {
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-paragraph dark:text-primary "
                   />
                 </span>
-                <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
+                <span className="font-jakarta_sans font-medium dark:text-white">
+                  Guided Payment Procurement
+                </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon item-center relative flex h-7 w-7 justify-center rounded-full bg-white dark:bg-dark-200">
@@ -59,7 +65,9 @@ const Vision = () => {
                   />
                 </span>
 
-                <span className="font-jakarta_sans font-medium dark:text-white">Guided Payment Procurement</span>
+                <span className="font-jakarta_sans font-medium dark:text-white">
+                  Guided Payment Procurement
+                </span>
               </li>
             </ul>
             <Link href="/contact" className="btn">
@@ -70,7 +78,7 @@ const Vision = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Vision
+export default Vision;

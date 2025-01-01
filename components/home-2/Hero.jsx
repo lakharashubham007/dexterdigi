@@ -1,10 +1,10 @@
-import PaymentImageDark from '@/public/images/payment/payment-hero-dark.png'
-import PaymentImageDeviceDark from '@/public/images/payment/payment-hero-device-dark.png'
-import PaymentImageDevice from '@/public/images/payment/payment-hero-device.png'
-import PaymentImage from '@/public/images/payment/payment-hero.png'
-import Image from 'next/image'
-import Link from 'next/link'
-import FadeUpAnimation from '../animations/FadeUpAnimation'
+import PaymentImageDark from '@/public/images/payment/payment-hero-dark.png';
+import PaymentImageDeviceDark from '@/public/images/payment/payment-hero-device-dark.png';
+import PaymentImageDevice from '@/public/images/payment/payment-hero-device.png';
+import PaymentImage from '@/public/images/payment/payment-hero.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import FadeUpAnimation from '../animations/FadeUpAnimation';
 
 const Hero = () => {
   return (
@@ -12,15 +12,20 @@ const Hero = () => {
       <div className="container">
         <div className="relative z-10 grid grid-cols-12 items-end gap-5">
           <FadeUpAnimation className="max-md:col-span-full max-md:mb-[350px] md:col-span-7">
-            <p className="mb-4 font-medium uppercase">Digital Payment Solution</p>
+            <p className="mb-4 font-medium uppercase">
+              Digital Payment Solution
+            </p>
             <h1 className="mb-10">
               Smart
-              <span className="inline-block px-5 pb-2.5 pt-0.5 font-playfair italic leading-none"> Payment </span>
+              <span className="inline-block px-5 pb-2.5 pt-0.5 font-playfair italic leading-none">
+                {' '}
+                Payment{' '}
+              </span>
               solution for your Business
             </h1>
             <p className="mb-12 max-w-[590px]">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin,
-              though it looks like it
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text. It&rsquo;s not Latin, though it looks like it
             </p>
             <div className="flex items-center gap-4">
               <Link href="/contact" className="btn">
@@ -68,7 +73,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,16 +1,16 @@
-import Footer from '@/components/footer/Footer'
-import PrimaryNavbar from '@/components/navbar/PrimaryNavbar'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import PriceChoose from '@/components/price/PriceChoose'
+import Footer from '@/components/footer/Footer';
+import PrimaryNavbar from '@/components/navbar/PrimaryNavbar';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import PriceChoose from '@/components/price/PriceChoose';
 
-import Counter from '@/components/shared/Counter'
-import Faq from '@/components/shared/Faq'
-import NewsLetter from '@/components/shared/NewsLetter'
-import Pricing from '@/components/shared/Pricing'
+import Counter from '@/components/shared/Counter';
+import Faq from '@/components/shared/Faq';
+import NewsLetter from '@/components/shared/NewsLetter';
+import Pricing from '@/components/shared/Pricing';
 
 export const metadata = {
   title: 'Pricing Page',
-}
+};
 
 const Price = () => {
   return (
@@ -28,7 +28,7 @@ const Price = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Price
+export default Price;

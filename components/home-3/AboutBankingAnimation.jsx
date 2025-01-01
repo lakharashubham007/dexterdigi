@@ -1,14 +1,14 @@
-'use client'
-import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { motion } from 'framer-motion'
-import { useRef } from 'react'
+'use client';
+import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
 const AboutBankingAnimation = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
-  const ref2 = useRef(null)
-  const controlAnimation2 = useWhileInView(ref2)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
+  const ref2 = useRef(null);
+  const controlAnimation2 = useWhileInView(ref2);
 
   return (
     <div className="relative flex items-center justify-end max-md:justify-center">
@@ -51,7 +51,7 @@ const AboutBankingAnimation = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutBankingAnimation
+export default AboutBankingAnimation;

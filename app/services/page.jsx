@@ -1,15 +1,15 @@
-import Footer from '@/components/footer/Footer'
-import PrimaryNavbar from '@/components/navbar/PrimaryNavbar'
+import Footer from '@/components/footer/Footer';
+import PrimaryNavbar from '@/components/navbar/PrimaryNavbar';
 // import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import MembersCounter from '@/components/shared/MembersCounter'
-import NewsLetter from '@/components/shared/NewsLetter'
-import PageHero from '@/components/shared/PageHero'
-import Pricing from '@/components/shared/Pricing'
-import Services from '@/components/shared/Services'
+import MembersCounter from '@/components/shared/MembersCounter';
+import NewsLetter from '@/components/shared/NewsLetter';
+import PageHero from '@/components/shared/PageHero';
+import Pricing from '@/components/shared/Pricing';
+import Services from '@/components/shared/Services';
 
 export const metadata = {
   title: 'Services',
-}
+};
 export default function ServicePage() {
   return (
     <>
@@ -28,5 +28,5 @@ export default function ServicePage() {
       </main>
       <Footer />
     </>
-  )
+  );
 }

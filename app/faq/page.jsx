@@ -1,12 +1,12 @@
-import FaqFilter from '@/components/faq/FaqFilter'
-import Footer from '@/components/footer/Footer'
-import PrimaryNavbar from '@/components/navbar/PrimaryNavbar'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import PageHero from '@/components/shared/PageHero'
+import FaqFilter from '@/components/faq/FaqFilter';
+import Footer from '@/components/footer/Footer';
+import PrimaryNavbar from '@/components/navbar/PrimaryNavbar';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import PageHero from '@/components/shared/PageHero';
 
 export const metadata = {
   title: 'Faq Page',
-}
+};
 
 const FaqPage = () => {
   return (
@@ -33,7 +33,7 @@ const FaqPage = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default FaqPage
+export default FaqPage;

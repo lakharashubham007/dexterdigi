@@ -1,7 +1,11 @@
-'use client'
-import { useState } from 'react'
-import { cn } from '@/utils/cn'
-import { CryptoIconOne, CryptoIconThree, CryptoIconTwo } from '@/data/svgImages'
+'use client';
+import { useState } from 'react';
+import { cn } from '@/utils/cn';
+import {
+  CryptoIconOne,
+  CryptoIconThree,
+  CryptoIconTwo,
+} from '@/data/svgImages';
 
 export const TabItemList = [
   {
@@ -40,10 +44,10 @@ export const TabItemList = [
     itemTwoText: 'Exchanges content',
     itemThreeText: 'Exchanges analysis',
   },
-]
+];
 
 const TabContent = () => {
-  const [selectedTab, setSelectedTab] = useState(0)
+  const [selectedTab, setSelectedTab] = useState(0);
   return (
     <>
       <div className="mb-8 rounded-[90px] bg-white p-2.5 shadow-box dark:bg-dark-200">
@@ -51,9 +55,13 @@ const TabContent = () => {
           <ul className="flex items-center gap-3 overflow-auto">
             {TabItemList.map((tabItem, index) => (
               <li
-                className={cn('tab group', selectedTab === index ? 'tab-active' : '')}
+                className={cn(
+                  'tab group',
+                  selectedTab === index ? 'tab-active' : ''
+                )}
                 key={tabItem.id}
-                onClick={() => setSelectedTab(index)}>
+                onClick={() => setSelectedTab(index)}
+              >
                 <span className="cursor-pointer rounded-[60px] border border-borderColor-dark px-5 py-2 font-medium leading-[22px] transition-colors duration-500  hover:bg-paragraph hover:text-white hover:duration-500 group-[.tab-active]:border-paragraph group-[.tab-active]:bg-paragraph group-[.tab-active]:text-white dark:border-borderColor-dark dark:hover:bg-primary dark:hover:text-paragraph dark:group-[.tab-active]:border-primary dark:group-[.tab-active]:bg-primary dark:group-[.tab-active]:text-paragraph ">
                   {tabItem.title}
                 </span>
@@ -65,7 +73,10 @@ const TabContent = () => {
 
       <div className="tab-content">
         {TabItemList.map((tabContents, index) => (
-          <div className={`${selectedTab === index ? '' : 'hidden'}`} key={tabContents.id}>
+          <div
+            className={`${selectedTab === index ? '' : 'hidden'}`}
+            key={tabContents.id}
+          >
             <p className="mb-8 max-md:mb-6">{tabContents.description}</p>
             <ul className="[&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               {tabContents.itemOneText && (
@@ -73,7 +84,9 @@ const TabContent = () => {
                   <span className="shadow-icon  item-center relative flex justify-center gap-6 rounded-full bg-white dark:bg-dark-200">
                     <CryptoIconOne />
                   </span>
-                  <span className="dark:text-white">{tabContents.itemOneText} </span>
+                  <span className="dark:text-white">
+                    {tabContents.itemOneText}{' '}
+                  </span>
                 </li>
               )}
               {tabContents.itemTwoText && (
@@ -81,7 +94,10 @@ const TabContent = () => {
                   <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
                     <CryptoIconTwo />
                   </span>
-                  <span className="dark:text-white"> {tabContents.itemTwoText} </span>
+                  <span className="dark:text-white">
+                    {' '}
+                    {tabContents.itemTwoText}{' '}
+                  </span>
                 </li>
               )}
               {tabContents.itemThreeText && (
@@ -89,7 +105,10 @@ const TabContent = () => {
                   <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
                     <CryptoIconThree />
                   </span>
-                  <span className="dark:text-white"> {tabContents.itemThreeText} </span>
+                  <span className="dark:text-white">
+                    {' '}
+                    {tabContents.itemThreeText}{' '}
+                  </span>
                 </li>
               )}
             </ul>
@@ -97,7 +116,7 @@ const TabContent = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default TabContent
+export default TabContent;

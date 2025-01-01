@@ -1,5 +1,5 @@
-import FaQuestion from './FaQuestion'
-import FaqBackground from './FaqBackground'
+import FaQuestion from './FaQuestion';
+import FaqBackground from './FaqBackground';
 
 const Faq = () => {
   return (
@@ -18,7 +18,7 @@ const Faq = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

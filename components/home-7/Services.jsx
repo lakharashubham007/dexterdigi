@@ -1,15 +1,19 @@
-'use client'
-import { fadeUpAnimation, fadeFromLeftAnimation, fadeFromRightAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
-import { useRef } from 'react'
-import useWhileInView from '@/hooks/useWhileInView'
-import Image from 'next/image'
-import cryptoCard from '@/public/images/home-7-img/service-card.png'
-import cryptoScore from '@/public/images/home-7-img/service-score.png'
-import cryptoScoreDark from '@/public/images/home-7-img/service-score-dark.png'
+'use client';
+import {
+  fadeUpAnimation,
+  fadeFromLeftAnimation,
+  fadeFromRightAnimation,
+} from '@/data/animation';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import useWhileInView from '@/hooks/useWhileInView';
+import Image from 'next/image';
+import cryptoCard from '@/public/images/home-7-img/service-card.png';
+import cryptoScore from '@/public/images/home-7-img/service-score.png';
+import cryptoScoreDark from '@/public/images/home-7-img/service-score-dark.png';
 const Services = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <div className="relative pb-150 pt-150">
       <div className="absolute left-1/2 top-0 -z-10 h-full w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
@@ -34,7 +38,8 @@ const Services = () => {
             initial="initial"
             ref={ref}
             animate={controlAnimation}
-            variants={fadeFromRightAnimation}>
+            variants={fadeFromRightAnimation}
+          >
             <div className="mb-8 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
               <div className=" rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                 <div className="mb-6 inline-block rounded-full bg-white p-2.5 shadow-nav dark:bg-dark-200  max-lg:p-2">
@@ -57,7 +62,9 @@ const Services = () => {
                 </div>
                 <div className="mb-8">
                   <h3 className="mb-6 leading-8">Wallets</h3>
-                  <p>Software Wallets: Coinbase Wallet, MetaMask, Trust Wallet.</p>
+                  <p>
+                    Software Wallets: Coinbase Wallet, MetaMask, Trust Wallet.
+                  </p>
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
@@ -66,7 +73,13 @@ const Services = () => {
                   </div>
                   <div>
                     <div className="relative size-[70px] shrink-0">
-                      <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="70"
+                        height="70"
+                        viewBox="0 0 70 70"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           d="M70 35.0006C70 54.3306 54.33 70.0006 35 70.0006C15.67 70.0006 0 54.3306 0 35.0006C0 15.6706 15.67 0.000610352 35 0.000610352C54.33 0.000610352 70 15.6706 70 35.0006ZM7.6939 35.0006C7.6939 50.0813 19.9193 62.3067 35 62.3067C50.0807 62.3067 62.3061 50.0813 62.3061 35.0006C62.3061 19.9199 50.0807 7.69452 35 7.69452C19.9193 7.69452 7.6939 19.9199 7.6939 35.0006Z"
                           fill=""
@@ -118,9 +131,18 @@ const Services = () => {
             initial="initial"
             ref={ref}
             animate={controlAnimation}
-            variants={fadeUpAnimation}>
-            <Image src={cryptoScore} alt="service-score" className="mb-8 max-w-full dark:hidden" />
-            <Image src={cryptoScoreDark} alt="service-score" className="mb-12 hidden max-w-full  dark:inline-block" />
+            variants={fadeUpAnimation}
+          >
+            <Image
+              src={cryptoScore}
+              alt="service-score"
+              className="mb-8 max-w-full dark:hidden"
+            />
+            <Image
+              src={cryptoScoreDark}
+              alt="service-score"
+              className="mb-12 hidden max-w-full  dark:inline-block"
+            />
 
             <Image src={cryptoCard} alt="service-card" className="max-w-full" />
           </motion.div>
@@ -129,7 +151,8 @@ const Services = () => {
             initial="initial"
             ref={ref}
             animate={controlAnimation}
-            variants={fadeFromLeftAnimation}>
+            variants={fadeFromLeftAnimation}
+          >
             <div className="mb-8 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
               <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                 <div className="mb-6 inline-block rounded-full bg-white p-2.5 shadow-nav dark:bg-dark-200  max-lg:p-2">
@@ -152,7 +175,9 @@ const Services = () => {
                 </div>
                 <div>
                   <h3 className="mb-6 leading-8">Exchanges</h3>
-                  <p>Decentralized Exchanges: Uniswap, SushiSwap, PancakeSwap.</p>
+                  <p>
+                    Decentralized Exchanges: Uniswap, SushiSwap, PancakeSwap.
+                  </p>
                 </div>
               </div>
             </div>
@@ -178,7 +203,10 @@ const Services = () => {
                 </div>
                 <div className="mb-8">
                   <h3 className="mb-6 leading-8">Payment Services</h3>
-                  <p>Crypto Payment Gateways: BitPay, CoinGate, Coinbase Commerce.</p>
+                  <p>
+                    Crypto Payment Gateways: BitPay, CoinGate, Coinbase
+                    Commerce.
+                  </p>
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
@@ -187,7 +215,13 @@ const Services = () => {
                   </div>
                   <div>
                     <div className="relative size-[70px] shrink-0">
-                      <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        width="70"
+                        height="70"
+                        viewBox="0 0 70 70"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           d="M70 35.0018C70 54.3318 54.33 70.0018 35 70.0018C15.67 70.0018 0 54.3318 0 35.0018C0 15.6719 15.67 0.00183105 35 0.00183105C54.33 0.00183105 70 15.6719 70 35.0018ZM7.6939 35.0018C7.6939 50.0826 19.9193 62.3079 35 62.3079C50.0807 62.3079 62.3061 50.0826 62.3061 35.0018C62.3061 19.9211 50.0807 7.69574 35 7.69574C19.9193 7.69574 7.6939 19.9211 7.6939 35.0018Z"
                           className="fill-[#E8F0D8] dark:fill-[#2F3524]"
@@ -211,7 +245,7 @@ const Services = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

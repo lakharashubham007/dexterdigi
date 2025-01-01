@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import TimeLineCard from './TimeLineCard'
+import TimeLineCard from './TimeLineCard';
 export const TimeLineData = [
   {
     id: 1,
@@ -59,7 +59,7 @@ export const TimeLineData = [
       },
     ],
   },
-]
+];
 
 const TimeLine = () => {
   return (
@@ -72,8 +72,8 @@ const TimeLine = () => {
 
               <h2 className="mb-8">Timeline</h2>
               <p className="lg:max-w-[520px]">
-                With concepts in hand, we meticulously design, refining every detail to align with your vision and
-                objectives.
+                With concepts in hand, we meticulously design, refining every
+                detail to align with your vision and objectives.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ const TimeLine = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TimeLine
+export default TimeLine;

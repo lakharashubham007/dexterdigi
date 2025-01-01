@@ -1,4 +1,4 @@
-import Questions from './Questions'
+import Questions from './Questions';
 
 const Faq = () => {
   return (
@@ -12,15 +12,16 @@ const Faq = () => {
               Question
             </h2>
             <p>
-              Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse amet amet. Aenean suspendisse
-              eget est pulvinar. Fames eget eget nascetur ornare
+              Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper
+              suspendisse amet amet. Aenean suspendisse eget est pulvinar. Fames
+              eget eget nascetur ornare
             </p>
           </div>
           <Questions />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

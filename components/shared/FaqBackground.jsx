@@ -8,7 +8,7 @@ const FaqBackground = () => {
       </div>
       <div className="absolute left-1/2 top-150 -z-10 h-full w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')]  bg-cover bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
     </>
-  )
-}
+  );
+};
 
-export default FaqBackground
+export default FaqBackground;

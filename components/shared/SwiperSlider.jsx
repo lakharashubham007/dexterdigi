@@ -1,12 +1,12 @@
-'use client'
-import TestimonialList from '@/data/testimonial'
-import Image from 'next/image'
-import { Pagination, Autoplay } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { RatingStars } from './Rating'
+'use client';
+import TestimonialList from '@/data/testimonial';
+import Image from 'next/image';
+import { Pagination, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { RatingStars } from './Rating';
 
 const SwiperSlider = () => {
-  const { TestimonialData } = TestimonialList
+  const { TestimonialData } = TestimonialList;
   return (
     <Swiper
       modules={[Pagination, Autoplay]}
@@ -31,11 +31,13 @@ const SwiperSlider = () => {
           spaceBetween: 45,
         },
       }}
-      className="swiper !py-16 md:!px-6">
+      className="swiper !py-16 md:!px-6"
+    >
       {TestimonialData.slice(0, 5).map((testimonial) => (
         <SwiperSlide
           key={testimonial.id}
-          className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
+          className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
+        >
           <div className=" h-full rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark ">
             <Image
               src={testimonial.logoLight}
@@ -52,8 +54,9 @@ const SwiperSlider = () => {
               height={35}
             />
             <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
-              “Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin
-              though it looks like it, and it actually says nothing.”
+              “Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text. It&rsquo;s not Latin though it looks like it,
+              and it actually says nothing.”
             </blockquote>
             <div className="mb-7">
               <RatingStars
@@ -64,7 +67,13 @@ const SwiperSlider = () => {
             </div>
 
             <div className="flex items-center border-t border-dashed border-gray-100 pt-7 dark:border-borderColor-dark">
-              <Image src={testimonial.author.image} alt="avatar" className="mr-4 rounded-full" width={56} height={56} />
+              <Image
+                src={testimonial.author.image}
+                alt="avatar"
+                className="mr-4 rounded-full"
+                width={56}
+                height={56}
+              />
               <div className="block">
                 <h3 className="text-base font-semibold">Robert Frost</h3>
                 <p className="font-jakarta_sans text-sm  font-medium text-paragraph-light dark:text-[#A1A49D]">
@@ -76,7 +85,7 @@ const SwiperSlider = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-  )
-}
+  );
+};
 
-export default SwiperSlider
+export default SwiperSlider;

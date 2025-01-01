@@ -1,12 +1,12 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import hostingStepDark from '@/public/images/home-5-img/hosting-steps-dark.png'
-import hostingStep from '@/public/images/home-5-img/hosting-steps.png'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { useRef } from 'react'
-import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation'
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import hostingStepDark from '@/public/images/home-5-img/hosting-steps-dark.png';
+import hostingStep from '@/public/images/home-5-img/hosting-steps.png';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
+import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation';
 
 const easyStepPlan = [
   {
@@ -27,11 +27,11 @@ const easyStepPlan = [
     description:
       ' We offer a variety of secure payment methods to make your payment process convenient and hassle-free.',
   },
-]
+];
 
 const EasyStepFeature = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
 
   return (
     <section className="relative overflow-hidden ">
@@ -50,11 +50,14 @@ const EasyStepFeature = () => {
               <FadeUpOneByOneAnimation
                 i={i}
                 className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200 "
-                key={plan.id}>
+                key={plan.id}
+              >
                 <div className=" rounded border border-dashed border-gray-100 p-8 dark:border-borderColor-dark max-md:p-4">
                   <div className="flex gap-10 max-lg:gap-5">
                     <div className="after:border-borderColour-dark relative flex size-10 shrink-0 items-center justify-center rounded-full bg-primary after:absolute after:left-1/2 after:top-1/2 after:size-[30px] after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:border after:border-dashed">
-                      <p className="font-jakarta_sans font-bold text-paragraph dark:text-paragraph">{plan.id}</p>
+                      <p className="font-jakarta_sans font-bold text-paragraph dark:text-paragraph">
+                        {plan.id}
+                      </p>
                     </div>
                     <div>
                       <h3 className="mb-2.5">{plan.title}</h3>
@@ -70,7 +73,8 @@ const EasyStepFeature = () => {
             initial="initial"
             animate={controlAnimation}
             variants={fadeUpAnimation}
-            ref={ref}>
+            ref={ref}
+          >
             <Image
               src={hostingStep}
               alt="company image"
@@ -90,7 +94,7 @@ const EasyStepFeature = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EasyStepFeature
+export default EasyStepFeature;

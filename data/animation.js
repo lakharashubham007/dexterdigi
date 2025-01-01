@@ -7,7 +7,7 @@ export const fadeUpAnimation = {
       duration: 0.5,
     },
   },
-}
+};
 export const fadeUpAnimationDelay = {
   initial: { opacity: 0, y: 100 },
   animate: {
@@ -18,7 +18,7 @@ export const fadeUpAnimationDelay = {
       delay: 0.2,
     },
   },
-}
+};
 
 export const fadeFromLeftAnimation = {
   initial: { opacity: 0, x: 100 },
@@ -30,7 +30,7 @@ export const fadeFromLeftAnimation = {
       delay: 0.2,
     },
   },
-}
+};
 export const fadeFromLeftAnimation2 = {
   initial: { opacity: 0, x: 100 },
   animate: {
@@ -41,7 +41,7 @@ export const fadeFromLeftAnimation2 = {
       delay: 0.4,
     },
   },
-}
+};
 export const fadeFromLeftAnimation3 = {
   initial: { opacity: 0, x: 100 },
   animate: {
@@ -52,7 +52,7 @@ export const fadeFromLeftAnimation3 = {
       delay: 0.6,
     },
   },
-}
+};
 export const fadeFromRightAnimation = {
   initial: { opacity: 0, x: -100 },
   animate: {
@@ -64,7 +64,7 @@ export const fadeFromRightAnimation = {
     },
   },
   viewPort: { once: true },
-}
+};
 
 export const fadeFromRightAnimation2 = {
   initial: { opacity: 0, x: -100 },
@@ -77,7 +77,7 @@ export const fadeFromRightAnimation2 = {
     },
   },
   viewPort: { once: true },
-}
+};
 
 export const fadeFromRightAnimation3 = {
   initial: { opacity: 0, x: -100 },
@@ -90,4 +90,4 @@ export const fadeFromRightAnimation3 = {
     },
   },
   viewPort: { once: true },
-}
+};

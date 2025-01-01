@@ -1,9 +1,11 @@
-import { cn } from '@/utils/cn'
-import SwiperSlider from './SwiperSlider'
+import { cn } from '@/utils/cn';
+import SwiperSlider from './SwiperSlider';
 
 const TestimonialSlider = ({ className = 'pt-0' }) => {
   return (
-    <section className={cn('relative pb-150 max-md:overflow-hidden', className)}>
+    <section
+      className={cn('relative pb-150 max-md:overflow-hidden', className)}
+    >
       <div className="container relative">
         <div className="mx-auto max-w-[550px] text-center ">
           <p className="section-tagline">Testimonials</p>
@@ -20,7 +22,7 @@ const TestimonialSlider = ({ className = 'pt-0' }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

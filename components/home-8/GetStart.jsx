@@ -1,7 +1,7 @@
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
-import React from 'react'
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import React from 'react';
 export const aiStartData = [
   {
     id: 1,
@@ -42,7 +42,7 @@ export const aiStartData = [
     imgDark: '/images/home-8-img/uidesign.jpg',
     isFeatured: false,
   },
-]
+];
 const GetStart = () => {
   return (
     <div className="relative pb-150 max-lg:overflow-hidden">
@@ -52,8 +52,8 @@ const GetStart = () => {
           <p className="section-tagline">Get Started</p>
           <h2 className="mb-8">Design your pixel-perfect website.</h2>
           <p className="mx-auto max-w-[520px]">
-            We provide everything you need to create websites. Expand your customer base, save time and money, and
-            increase sales.
+            We provide everything you need to create websites. Expand your
+            customer base, save time and money, and increase sales.
           </p>
         </div>
       </div>
@@ -66,7 +66,10 @@ const GetStart = () => {
         <div className="grid grid-cols-12 items-center gap-y-8 md:gap-x-8 ">
           {aiStartData?.map((items) =>
             items.isFeatured ? (
-              <div className="col-span-12 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200" key={items.id}>
+              <div
+                className="col-span-12 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
+                key={items.id}
+              >
                 <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                   <div className="grid grid-cols-12 items-center gap-6">
                     <div className="col-span-12 md:col-span-6 1xl:pr-20">
@@ -78,7 +81,8 @@ const GetStart = () => {
                         {items.listItem.map((item, index) => (
                           <li
                             className=" mb-5 flex items-center gap-3.5 rounded-lg border border-dashed border-gray-100 p-2.5 last:mb-0 dark:border-borderColor-dark"
-                            key={index}>
+                            key={index}
+                          >
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded bg-primary-100 dark:bg-dark-300">
                               <i className="fa-solid fa-check text-primary dark:text-primary"></i>
                               <FontAwesomeIcon icon={faCheck} />
@@ -95,7 +99,8 @@ const GetStart = () => {
             ) : (
               <div
                 className="col-span-12 rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200 sm:col-span-6 "
-                key={items.id}>
+                key={items.id}
+              >
                 <div className=" rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                   <div className="mb-6 text-center">
                     <h3 className="mb-2.5 leading-8">{items.title}</h3>
@@ -119,12 +124,12 @@ const GetStart = () => {
                   </div>
                 </div>
               </div>
-            ),
+            )
           )}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GetStart
+export default GetStart;

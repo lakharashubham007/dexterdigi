@@ -1,29 +1,29 @@
-import Footer from '@/components/footer/Footer'
-import PrimaryNavbar from '@/components/navbar/PrimaryNavbar'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import ServiceContent from '@/components/service/ServiceContent'
-import MembersCounter from '@/components/shared/MembersCounter'
-import NewsLetter from '@/components/shared/NewsLetter'
-import Pricing from '@/components/shared/Pricing'
-import ServiceList from '@/data/serviceData'
+import Footer from '@/components/footer/Footer';
+import PrimaryNavbar from '@/components/navbar/PrimaryNavbar';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import ServiceContent from '@/components/service/ServiceContent';
+import MembersCounter from '@/components/shared/MembersCounter';
+import NewsLetter from '@/components/shared/NewsLetter';
+import Pricing from '@/components/shared/Pricing';
+import ServiceList from '@/data/serviceData';
 
 export async function generateMetadata({ params }) {
   return {
     title: params.slug,
-  }
+  };
 }
 
 export async function generateStaticParams() {
-  const { ServiceData } = ServiceList
+  const { ServiceData } = ServiceList;
   return ServiceData.map((item) => ({
     slug: item.slug,
-  }))
+  }));
 }
 
 const ServiceDetails = (props) => {
-  const { ServiceData } = ServiceList
-  const slug = props.params.slug
-  const data = ServiceData.find((post) => post.slug === slug)
+  const { ServiceData } = ServiceList;
+  const slug = props.params.slug;
+  const data = ServiceData.find((post) => post.slug === slug);
 
   return (
     <>
@@ -37,7 +37,7 @@ const ServiceDetails = (props) => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default ServiceDetails
+export default ServiceDetails;

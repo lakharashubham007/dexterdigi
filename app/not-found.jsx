@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import FadeUpAnimation from '@/components/animations/FadeUpAnimation'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import Footer from '@/components/footer/Footer'
+import Link from 'next/link';
+import FadeUpAnimation from '@/components/animations/FadeUpAnimation';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import Footer from '@/components/footer/Footer';
 
 export const metadata = {
   title: '404 || Not Found',
-}
+};
 
 const NotFound = () => {
   return (
@@ -34,7 +34,7 @@ const NotFound = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

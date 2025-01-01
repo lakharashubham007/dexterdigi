@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 export const RobustFeaturesData = [
   {
     id: 1,
@@ -30,7 +30,7 @@ export const RobustFeaturesData = [
     iconDark: '/images/home-8-img/ai-feature-4-dark.svg',
     desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
-]
+];
 const RubustFeature = () => {
   return (
     <section className="relative max-lg:overflow-hidden">
@@ -44,7 +44,8 @@ const RubustFeature = () => {
 
                 <h2 className="mb-8">Simplify operations for your business.</h2>
                 <p className="mb-8">
-                  With concepts in mind, we carefully design and perfect every detail to match your vision and goals.
+                  With concepts in mind, we carefully design and perfect every
+                  detail to match your vision and goals.
                 </p>
                 <Link href="/services" className="btn btn-sm">
                   Read More
@@ -62,7 +63,8 @@ const RubustFeature = () => {
                   {RobustFeaturesData.slice(0, 2).map((items) => (
                     <div
                       className=" ]  group relative px-0 py-12 after:absolute after:overflow-hidden max-lg:top-auto max-lg:after:bottom-0 max-lg:after:left-1/2 max-lg:after:h-[1px] max-lg:after:w-full max-lg:after:-translate-x-1/2 max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')]  lg:px-12 lg:after:right-0 lg:after:top-1/2 lg:after:h-full lg:after:w-[1px] lg:after:-translate-y-1/2 lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')]"
-                      key={items.id}>
+                      key={items.id}
+                    >
                       <Image
                         src={items.iconLight}
                         alt="ai logo"
@@ -86,7 +88,8 @@ const RubustFeature = () => {
                   {RobustFeaturesData.slice(2, 4).map((items) => (
                     <div
                       className=" group  relative px-0 py-12 after:absolute after:overflow-hidden max-lg:top-auto max-lg:after:bottom-0 max-lg:after:left-1/2 max-lg:after:h-[1px] max-lg:after:w-full max-lg:after:-translate-x-1/2 max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile.svg')] dark:max-lg:after:content-[url('/images/payment/coreborder-bottom-mobile-dark.svg')] lg:px-12  lg:after:right-0 lg:after:top-1/2 lg:after:h-full lg:after:w-[1px] lg:after:-translate-y-1/2 lg:after:content-[url('/images/payment/coreborder-right.svg')] lg:dark:after:content-[url('/images/payment/coreborder-right-dark.svg')] "
-                      key={items.id}>
+                      key={items.id}
+                    >
                       <Image
                         src={items.iconLight}
                         alt="ai logo"
@@ -112,7 +115,7 @@ const RubustFeature = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default RubustFeature
+export default RubustFeature;

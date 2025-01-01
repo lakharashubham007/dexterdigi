@@ -1,19 +1,19 @@
-'use client'
-import ServiceList from '@/data/serviceData'
-import { faAngleRight, faX } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
-import ReactPlayer from 'react-player'
+'use client';
+import ServiceList from '@/data/serviceData';
+import { faAngleRight, faX } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import ReactPlayer from 'react-player';
 
 const ServiceContent = ({ data }) => {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   const openModal = (e) => {
-    e.preventDefault()
-    setModal(!modal)
-  }
-  const { ServiceData } = ServiceList
+    e.preventDefault();
+    setModal(!modal);
+  };
+  const { ServiceData } = ServiceList;
   return (
     <>
       {modal ? (
@@ -24,7 +24,12 @@ const ServiceContent = ({ data }) => {
                 <FontAwesomeIcon icon={faX} />
               </span>
               <div className="modal-video-align">
-                <ReactPlayer url={data.videoLink} className="modal-video-item" width="100%" height="100%" />
+                <ReactPlayer
+                  url={data.videoLink}
+                  className="modal-video-item"
+                  width="100%"
+                  height="100%"
+                />
               </div>
             </div>
           </div>
@@ -45,12 +50,19 @@ const ServiceContent = ({ data }) => {
                 <h3 className="mb-3">Categories</h3>
                 <ul className="[&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed  [&>*:not(:last-child)]:border-gray-100  dark:[&>*:not(:last-child)]:border-borderColor-dark">
                   {ServiceData?.map((services) => (
-                    <li className={`group ${services.slug === data.slug ? 'tabActive' : ''}`} key={services.id}>
+                    <li
+                      className={`group ${services.slug === data.slug ? 'tabActive' : ''}`}
+                      key={services.id}
+                    >
                       <Link
                         className="relative flex items-center justify-between py-5 font-medium before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform  before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
-                        href={`/services/${services.slug}`}>
+                        href={`/services/${services.slug}`}
+                      >
                         {services.title}
-                        <FontAwesomeIcon icon={faAngleRight} className="hidden group-[.tabActive]:block" />
+                        <FontAwesomeIcon
+                          icon={faAngleRight}
+                          className="hidden group-[.tabActive]:block"
+                        />
                       </Link>
                     </li>
                   ))}
@@ -75,7 +87,9 @@ const ServiceContent = ({ data }) => {
                 <p>{data.serviceExpectation}</p>
                 <ul>
                   {data.serviceExpectationList &&
-                    data.serviceExpectationList.map((items, index) => <li key={index}> {items.item} </li>)}
+                    data.serviceExpectationList.map((items, index) => (
+                      <li key={index}> {items.item} </li>
+                    ))}
                 </ul>
 
                 {/* <div className="relative rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
@@ -98,7 +112,9 @@ const ServiceContent = ({ data }) => {
                 <p>{data.serviceQualifications}</p>
                 <ul>
                   {data.serviceQualificationsList &&
-                    data.serviceQualificationsList.map((items, index) => <li key={index}> {items.item} </li>)}
+                    data.serviceQualificationsList.map((items, index) => (
+                      <li key={index}> {items.item} </li>
+                    ))}
                 </ul>
               </div>
             </div>
@@ -106,7 +122,7 @@ const ServiceContent = ({ data }) => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default ServiceContent
+export default ServiceContent;

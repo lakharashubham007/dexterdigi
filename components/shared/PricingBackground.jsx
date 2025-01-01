@@ -1,4 +1,4 @@
-'use client'
+'use client';
 const PricingBackground = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const PricingBackground = () => {
       </div>
       <div className="absolute left-1/2 top-25 -translate-x-1/2 -translate-y-1/2 bg-[url('/images/price-gradient.png')] bg-contain bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
     </>
-  )
-}
+  );
+};
 
-export default PricingBackground
+export default PricingBackground;

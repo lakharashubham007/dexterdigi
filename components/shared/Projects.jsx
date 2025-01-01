@@ -1,11 +1,11 @@
-'use client'
+'use client';
 import { useState } from 'react';
-import ProjectCards from './ProjectCards'
+import ProjectCards from './ProjectCards';
 
 const Projects = ({ sectionDetails = true }) => {
   const [activeFilter, setActiveFilter] = useState('ALL');
 
-  const filters = ['ALL', 'Web Development', 'Mobile',];
+  const filters = ['ALL', 'Web Development', 'Mobile'];
   return (
     <section className="relative bg-white pb-150 dark:bg-dark-300 sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
@@ -19,8 +19,9 @@ const Projects = ({ sectionDetails = true }) => {
                 trust DrexterDigi.
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not
-                Latin, though it looks like it
+                Until recently, the prevailing view assumed lorem ipsum was born
+                as a nonsense text. It&rsquo;s not Latin, though it looks like
+                it
               </p>
             </div>
           </div>
@@ -34,7 +35,8 @@ const Projects = ({ sectionDetails = true }) => {
                   ? 'bg-primary-500 text-white'
                   : 'bg-gray-200 text-gray-800 hover:bg-primary-100 hover:text-primary-700 dark:bg-dark-200 dark:text-gray-400 dark:hover:bg-dark-400'
               } transition-all duration-200`}
-              onClick={() => setActiveFilter(filter)}>
+              onClick={() => setActiveFilter(filter)}
+            >
               {filter}
             </button>
           ))}
@@ -45,11 +47,11 @@ const Projects = ({ sectionDetails = true }) => {
             <div className="rounded-full bg-primary-200/25 blur-[145px] lg:-ml-[170px] lg:h-[330px] lg:w-[330px] xl:h-[442px] xl:w-[442px]"></div>
             <div className="lg-ml-[170px] rounded-full bg-primary-200/20 blur-[145px] lg:h-[330px] lg:w-[330px] xl:h-[442px] xl:w-[442px]"></div>
           </div>
-          <ProjectCards activeFilter={activeFilter}/>
+          <ProjectCards activeFilter={activeFilter} />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

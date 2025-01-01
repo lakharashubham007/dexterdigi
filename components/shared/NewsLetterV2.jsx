@@ -2,7 +2,13 @@ const NewsLetterV2 = () => {
   return (
     <section className="relative overflow-hidden pb-[75px] pt-[75px]">
       <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2">
-        <svg width="1920" height="1082" viewBox="0 0 1920 1082" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="1920"
+          height="1082"
+          viewBox="0 0 1920 1082"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <mask
             id="mask0_115_3234"
             style={{ maskType: 'alpha' }}
@@ -10,8 +16,16 @@ const NewsLetterV2 = () => {
             x="0"
             y="215"
             width="1920"
-            height="381">
-            <rect x="0.5" y="215.5" width="1919" height="380" fill="white" stroke="black" />
+            height="381"
+          >
+            <rect
+              x="0.5"
+              y="215.5"
+              width="1919"
+              height="380"
+              fill="white"
+              stroke="black"
+            />
           </mask>
           <g mask="url(#mask0_115_3234)">
             <path
@@ -41,10 +55,19 @@ const NewsLetterV2 = () => {
               width="1582"
               height="1082"
               filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB">
+              colorInterpolationFilters="sRGB"
+            >
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="145" result="effect1_foregroundBlur_115_3234" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="145"
+                result="effect1_foregroundBlur_115_3234"
+              />
             </filter>
             <linearGradient
               id="paint0_linear_115_3234"
@@ -52,9 +75,15 @@ const NewsLetterV2 = () => {
               y1="630.9"
               x2="943.999"
               y2="180.1"
-              gradientUnits="userSpaceOnUse">
+              gradientUnits="userSpaceOnUse"
+            >
               <stop stopColor="" className="stop-color" />
-              <stop offset="0.694321" stopColor="" stopOpacity="0" className="stop-color" />
+              <stop
+                offset="0.694321"
+                stopColor=""
+                stopOpacity="0"
+                className="stop-color"
+              />
             </linearGradient>
           </defs>
         </svg>
@@ -69,7 +98,10 @@ const NewsLetterV2 = () => {
               <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px] ">
                 Create a full website with the help of an AI Assistant.
               </h2>
-              <p>By creating a custom Web design for your business, we can bring your vision to life.</p>
+              <p>
+                By creating a custom Web design for your business, we can bring
+                your vision to life.
+              </p>
             </div>
             <div className="max-md:col-span-full max-md:mt-5 md:col-span-6 lg:col-span-5 ">
               <form>
@@ -79,7 +111,9 @@ const NewsLetterV2 = () => {
                     placeholder="Enter your email"
                     className="placeholder:text-light text-light border-borderColour h-full rounded-[60px] border  bg-transparent bg-white ps-5 leading-[1.5] text-[#A1A49D] outline-none transition-all duration-300 focus:border-primary focus:outline-none dark:border-[#31332F] dark:bg-dark-200 dark:placeholder:text-[#A1A49D] dark:focus:border-primary  max-lg:col-span-full max-lg:py-3.5 lg:col-span-8"
                   />
-                  <button className="btn max-lg:col-span-full lg:col-span-4">Get Started</button>
+                  <button className="btn max-lg:col-span-full lg:col-span-4">
+                    Get Started
+                  </button>
                 </div>
               </form>
               <ul className=" mt-6 flex items-center max-lg:justify-between max-lg:gap-y-2.5 max-md:flex-col lg:gap-5 ">
@@ -90,7 +124,8 @@ const NewsLetterV2 = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3">
+                    className="mr-3"
+                  >
                     <path
                       d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                       stroke=""
@@ -109,7 +144,8 @@ const NewsLetterV2 = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3">
+                    className="mr-3"
+                  >
                     <path
                       d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                       stroke=""
@@ -127,7 +163,7 @@ const NewsLetterV2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default NewsLetterV2
+export default NewsLetterV2;

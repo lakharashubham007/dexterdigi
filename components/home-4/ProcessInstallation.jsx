@@ -1,21 +1,21 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import accountDark from '@/public/images/home-4-img/account-dark.png'
-import accountProcessDark from '@/public/images/home-4-img/account-process-dark.png'
-import accountProcess from '@/public/images/home-4-img/account-process.png'
-import rightArrowDark from '@/public/images/home-4-img/account-right-arrow-dark.png'
-import rightArrow from '@/public/images/home-4-img/account-right-arrow.png'
-import accountSolutionsDark from '@/public/images/home-4-img/account-solutions-dark.png'
-import accountSolutions from '@/public/images/home-4-img/account-solutions.png'
-import account from '@/public/images/home-4-img/account.png'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { useRef } from 'react'
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import accountDark from '@/public/images/home-4-img/account-dark.png';
+import accountProcessDark from '@/public/images/home-4-img/account-process-dark.png';
+import accountProcess from '@/public/images/home-4-img/account-process.png';
+import rightArrowDark from '@/public/images/home-4-img/account-right-arrow-dark.png';
+import rightArrow from '@/public/images/home-4-img/account-right-arrow.png';
+import accountSolutionsDark from '@/public/images/home-4-img/account-solutions-dark.png';
+import accountSolutions from '@/public/images/home-4-img/account-solutions.png';
+import account from '@/public/images/home-4-img/account.png';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
 
 const ProcessInstallation = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
 
   const processItems = [
     {
@@ -40,7 +40,7 @@ const ProcessInstallation = () => {
       darkImg: accountSolutionsDark,
       title: 'Reset Data After Solutions',
     },
-  ]
+  ];
 
   return (
     <section className="container">
@@ -49,7 +49,8 @@ const ProcessInstallation = () => {
         initial="initial"
         animate={controlAnimation}
         ref={ref}
-        variants={fadeUpAnimation}>
+        variants={fadeUpAnimation}
+      >
         <p className="section-tagline">Process</p>
         <h2 className="mb-8">
           Follow the minimalistic steps
@@ -62,7 +63,8 @@ const ProcessInstallation = () => {
         initial="initial"
         animate={controlAnimation}
         ref={ref}
-        variants={fadeUpAnimation}>
+        variants={fadeUpAnimation}
+      >
         {processItems?.map((process) => (
           <div key={process.id} className="flex items-center gap-5">
             <figure className="relative flex h-[110px] w-[110px] shrink-0 scale-100 items-center justify-center rounded-full bg-white p-2.5 shadow-nav  transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200 max-lg:p-2 ">
@@ -111,9 +113,11 @@ const ProcessInstallation = () => {
           </div>
         ))}
       </motion.div>
-      <button className="btn-outline mx-auto mt-15 flex">Try it for 30 days, no credit card required</button>
+      <button className="btn-outline mx-auto mt-15 flex">
+        Try it for 30 days, no credit card required
+      </button>
     </section>
-  )
-}
+  );
+};
 
-export default ProcessInstallation
+export default ProcessInstallation;

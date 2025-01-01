@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import aboutImage from '@/public/images/home-7-img/aboutCrypto.png'
-import aboutImageDark from '@/public/images/home-7-img/aboutCrypto-dark.png'
-import aboutImageShape from '@/public/images/home-7-img/aboutCrypto-shape.png'
-import aboutImageShapeDark from '@/public/images/home-7-img/aboutCrypto-shape-dark.png'
-import TabContent from './TabContent'
+import Image from 'next/image';
+import aboutImage from '@/public/images/home-7-img/aboutCrypto.png';
+import aboutImageDark from '@/public/images/home-7-img/aboutCrypto-dark.png';
+import aboutImageShape from '@/public/images/home-7-img/aboutCrypto-shape.png';
+import aboutImageShapeDark from '@/public/images/home-7-img/aboutCrypto-shape-dark.png';
+import TabContent from './TabContent';
 
 const AboutCrypto = () => {
   return (
@@ -22,19 +22,29 @@ const AboutCrypto = () => {
               className="hidden max-w-[250px]  dark:inline-block lg:max-w-[320px] xl:max-w-[420px]"
             />
             <div className="absolute bottom-8 left-0 right-auto top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px] ">
-              <Image src={aboutImageShape} alt="crypto image" className="dark:hidden" />
-              <Image src={aboutImageShapeDark} alt="crypto image" className="hidden dark:inline-block " />
+              <Image
+                src={aboutImageShape}
+                alt="crypto image"
+                className="dark:hidden"
+              />
+              <Image
+                src={aboutImageShapeDark}
+                alt="crypto image"
+                className="hidden dark:inline-block "
+              />
             </div>
           </div>
           <div>
             <p className="section-tagline">ABOUT</p>
-            <h2 className="mb-8 max-md:mb-4">Crypto is the premier crowdsale service!</h2>
+            <h2 className="mb-8 max-md:mb-4">
+              Crypto is the premier crowdsale service!
+            </h2>
             <TabContent />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutCrypto
+export default AboutCrypto;

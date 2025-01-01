@@ -6,9 +6,15 @@ const TestmonialBg = () => {
       viewBox="0 0 1204 779"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink">
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
       <g clipPath="url(#clip0_1098_5051)">
-        <rect width="1204" height="779" fill="url(#pattern0_1098_5051)" fillOpacity="0.2" />
+        <rect
+          width="1204"
+          height="779"
+          fill="url(#pattern0_1098_5051)"
+          fillOpacity="0.2"
+        />
         <g filter="url(#filter0_f_1098_5051)">
           <ellipse
             cx="501"
@@ -23,8 +29,16 @@ const TestmonialBg = () => {
         </g>
       </g>
       <defs>
-        <pattern id="pattern0_1098_5051" patternContentUnits="objectBoundingBox" width="1" height="1">
-          <use xlinkHref="#image0_1098_5051" transform="matrix(0.000520523 0 0 0.000804505 0.000298014 0)" />
+        <pattern
+          id="pattern0_1098_5051"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use
+            xlinkHref="#image0_1098_5051"
+            transform="matrix(0.000520523 0 0 0.000804505 0.000298014 0)"
+          />
         </pattern>
         <filter
           id="filter0_f_1098_5051"
@@ -33,13 +47,27 @@ const TestmonialBg = () => {
           width="1582"
           height="1006"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-          <feGaussianBlur stdDeviation="145" result="effect1_foregroundBlur_1098_5051" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="145"
+            result="effect1_foregroundBlur_1098_5051"
+          />
         </filter>
         <clipPath id="clip0_1098_5051">
-          <rect width="1204" height="779" fill="" className="fill-white dark:fill-white" />
+          <rect
+            width="1204"
+            height="779"
+            fill=""
+            className="fill-white dark:fill-white"
+          />
         </clipPath>
         <image
           id="image0_1098_5051"
@@ -49,7 +77,7 @@ const TestmonialBg = () => {
         />
       </defs>
     </svg>
-  )
-}
+  );
+};
 
-export default TestmonialBg
+export default TestmonialBg;

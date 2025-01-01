@@ -1,17 +1,17 @@
-import FadeUpAnimation from '@/components/animations/FadeUpAnimation'
-import Footer from '@/components/footer/Footer'
-import SecondaryNavbar from '@/components/navbar/SecondaryNavbar'
-import NewsLetter from '@/components/shared/NewsLetter'
-import PageHero from '@/components/shared/PageHero'
-import IntegrationList from '@/data/integrationData'
-import Image from 'next/image'
+import FadeUpAnimation from '@/components/animations/FadeUpAnimation';
+import Footer from '@/components/footer/Footer';
+import SecondaryNavbar from '@/components/navbar/SecondaryNavbar';
+import NewsLetter from '@/components/shared/NewsLetter';
+import PageHero from '@/components/shared/PageHero';
+import IntegrationList from '@/data/integrationData';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Integration Page',
-}
+};
 
 const Integration = () => {
-  const { IntegrationData } = IntegrationList
+  const { IntegrationData } = IntegrationList;
   return (
     <>
       <SecondaryNavbar />
@@ -32,7 +32,10 @@ const Integration = () => {
               </div>
               <FadeUpAnimation className=" grid grid-cols-2 gap-8 max-md:grid-cols-1">
                 {IntegrationData.map((items) => (
-                  <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200" key={items.id}>
+                  <div
+                    className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
+                    key={items.id}
+                  >
                     <div className="rounded border border-dashed border-gray-100 p-10 text-center dark:border-borderColor-dark ">
                       <Image
                         src={items.image}
@@ -54,7 +57,7 @@ const Integration = () => {
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Integration
+export default Integration;

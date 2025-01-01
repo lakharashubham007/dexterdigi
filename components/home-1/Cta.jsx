@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import HeroLine1 from '../icons/HeroLine1'
-import HeroLine2 from '../icons/HeroLine2'
-import HeroLine3 from '../icons/HeroLine3'
+import Link from 'next/link';
+import HeroLine1 from '../icons/HeroLine1';
+import HeroLine2 from '../icons/HeroLine2';
+import HeroLine3 from '../icons/HeroLine3';
 
 const Cta = () => {
   return (
@@ -22,7 +22,8 @@ const Cta = () => {
             Trial Today.
           </h2>
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
-            By creating a custom Web design for your business, we can bring your vision to life.
+            By creating a custom Web design for your business, we can bring your
+            vision to life.
           </p>
           <Link href="/contact" className="btn">
             Get Started Today
@@ -35,7 +36,8 @@ const Cta = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -54,7 +56,8 @@ const Cta = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -73,7 +76,8 @@ const Cta = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -89,7 +93,7 @@ const Cta = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Cta
+export default Cta;

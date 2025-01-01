@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const CallToActionV2 = () => {
   return (
@@ -12,9 +12,18 @@ const CallToActionV2 = () => {
             viewBox="0 0 1388 580"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="">
+            className=""
+          >
             <g filter="url(#filter0_d_1098_5159)">
-              <rect x="50" y="45" width="1288" height="480" rx="20" fill="" className=" fill-white dark:fill-dark" />
+              <rect
+                x="50"
+                y="45"
+                width="1288"
+                height="480"
+                rx="20"
+                fill=""
+                className=" fill-white dark:fill-dark"
+              />
             </g>
             <mask
               id="mask0_1098_5159"
@@ -23,8 +32,17 @@ const CallToActionV2 = () => {
               x="50"
               y="45"
               width="1288"
-              height="480">
-              <rect x="50" y="45" width="1288" height="480" rx="20" fill="" className="fill-white dark:fill-white" />
+              height="480"
+            >
+              <rect
+                x="50"
+                y="45"
+                width="1288"
+                height="480"
+                rx="20"
+                fill=""
+                className="fill-white dark:fill-white"
+              />
             </mask>
             <g mask="url(#mask0_1098_5159)">
               <path
@@ -54,7 +72,8 @@ const CallToActionV2 = () => {
                 width="1388"
                 height="580"
                 filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB">
+                colorInterpolationFilters="sRGB"
+              >
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
@@ -65,9 +84,21 @@ const CallToActionV2 = () => {
                 <feOffset dy="5" />
                 <feGaussianBlur stdDeviation="25" />
                 <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1098_5159" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1098_5159" result="shape" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_1098_5159"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_1098_5159"
+                  result="shape"
+                />
               </filter>
               <filter
                 id="filter1_f_1098_5159"
@@ -76,10 +107,19 @@ const CallToActionV2 = () => {
                 width="1582"
                 height="1022"
                 filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB">
+                colorInterpolationFilters="sRGB"
+              >
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="145" result="effect1_foregroundBlur_1098_5159" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="145"
+                  result="effect1_foregroundBlur_1098_5159"
+                />
               </filter>
               <linearGradient
                 id="paint0_linear_1098_5159"
@@ -87,9 +127,18 @@ const CallToActionV2 = () => {
                 y1="553.801"
                 x2="726.55"
                 y2="103.001"
-                gradientUnits="userSpaceOnUse">
-                <stop stopColor="" className="stop-color dark:stop-color-dark" />
-                <stop offset="0.694321" stopColor="" stopOpacity="0" className="stop-color dark:stop-color-dark" />
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop
+                  stopColor=""
+                  className="stop-color dark:stop-color-dark"
+                />
+                <stop
+                  offset="0.694321"
+                  stopColor=""
+                  stopOpacity="0"
+                  className="stop-color dark:stop-color-dark"
+                />
               </linearGradient>
             </defs>
           </svg>
@@ -100,7 +149,8 @@ const CallToActionV2 = () => {
             Try it free today and see your business expand.
           </h2>
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
-            Sign up today to enhance your customer support <br /> with our tools and solutions.
+            Sign up today to enhance your customer support <br /> with our tools
+            and solutions.
           </p>
           <Link href="/contact" className="btn">
             7 Days Free Trial
@@ -113,7 +163,8 @@ const CallToActionV2 = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -132,7 +183,8 @@ const CallToActionV2 = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -151,7 +203,8 @@ const CallToActionV2 = () => {
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <path
                   d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                   stroke=""
@@ -167,7 +220,7 @@ const CallToActionV2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CallToActionV2
+export default CallToActionV2;

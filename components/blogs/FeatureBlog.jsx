@@ -1,13 +1,15 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
-import { Pagination } from 'swiper/modules'
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
+import { Pagination } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const FeatureBlog = ({ featureBlog }) => {
-  const featuredBlogFiltered = featureBlog.filter((blog) => blog.data.featured === true)
+  const featuredBlogFiltered = featureBlog.filter(
+    (blog) => blog.data.featured === true
+  );
 
   return (
     <div className="relative">
@@ -25,7 +27,8 @@ const FeatureBlog = ({ featureBlog }) => {
             spaceBetween={50}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            className="swiper !pb-20 md:!px-6">
+            className="swiper !pb-20 md:!px-6"
+          >
             {featuredBlogFiltered.map((blogItem) => (
               <SwiperSlide key={blogItem.slug}>
                 <article className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
@@ -41,23 +44,42 @@ const FeatureBlog = ({ featureBlog }) => {
                       </div>
 
                       <div className="">
-                        <Link href={`/tags/${blogItem.data.tags}`} className="badge">
+                        <Link
+                          href={`/tags/${blogItem.data.tags}`}
+                          className="badge"
+                        >
                           {blogItem.data.tags}
                         </Link>
 
                         <Link href={`/blog/${blogItem.slug}`} className="block">
-                          <h3 className="mb-3 font-semibold leading-[1.33]">{blogItem.data.title}</h3>
+                          <h3 className="mb-3 font-semibold leading-[1.33]">
+                            {blogItem.data.title}
+                          </h3>
                         </Link>
                         <div className="mb-4 flex items-center gap-x-2 ">
                           <p>{blogItem.data.author}</p>
                           <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                              <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="5"
+                              height="6"
+                              viewBox="0 0 5 6"
+                              fill="none"
+                            >
+                              <circle
+                                cx="2.5"
+                                cy="3"
+                                r="2.5"
+                                fill=""
+                                className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                              />
                             </svg>
                           </span>
                           <p>{blogItem.data.date}</p>
                         </div>
-                        <ReactMarkdown className="mb-6">{blogItem.content.slice(0, 150)}</ReactMarkdown>
+                        <ReactMarkdown className="mb-6">
+                          {blogItem.content.slice(0, 150)}
+                        </ReactMarkdown>
                       </div>
                     </div>
                   </div>
@@ -68,7 +90,7 @@ const FeatureBlog = ({ featureBlog }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FeatureBlog
+export default FeatureBlog;

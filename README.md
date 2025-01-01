@@ -1,4 +1,5 @@
 # Aplio
+
 Aplio Nextjs Theme Development Structure.
 
 ## Getting Started

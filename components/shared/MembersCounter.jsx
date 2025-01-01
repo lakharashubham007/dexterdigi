@@ -1,4 +1,4 @@
-import CounterAnimation from '@/utils/CounterAnimation'
+import CounterAnimation from '@/utils/CounterAnimation';
 
 const MembersCounter = ({ border = true }) => {
   return (
@@ -9,7 +9,8 @@ const MembersCounter = ({ border = true }) => {
             !border
               ? ''
               : "after:cover before:absolute before:left-1/2 before:top-0 before:h-0.5 before:w-full before:-translate-x-1/2 before:bg-[url('/images/payment/member-border.svg')] before:bg-cover before:bg-center before:bg-no-repeat after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-full after:-translate-x-1/2 after:bg-[url('/images/payment/member-border.svg')] after:bg-center after:bg-no-repeat dark:before:bg-[url('/images/payment/member-border-dark.svg')] dark:after:bg-[url('/images/payment/member-border-dark.svg')] max-md:before:hidden"
-          }`}>
+          }`}
+        >
           <div className="max-lg:col-span-full lg:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
@@ -55,7 +56,7 @@ const MembersCounter = ({ border = true }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MembersCounter
+export default MembersCounter;

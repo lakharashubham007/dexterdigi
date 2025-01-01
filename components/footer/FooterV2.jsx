@@ -1,8 +1,8 @@
-import { FooterData } from '@/data/footer'
-import footerSeperator from '@/public/images/footer-seperator.svg'
-import footerSeperatorDark from '@/public/images/footer-seperator-dark.svg'
-import Image from 'next/image'
-import Link from 'next/link'
+import { FooterData } from '@/data/footer';
+import footerSeperator from '@/public/images/footer-seperator.svg';
+import footerSeperatorDark from '@/public/images/footer-seperator-dark.svg';
+import Image from 'next/image';
+import Link from 'next/link';
 const FooterV2 = () => {
   return (
     <footer className="relative overflow-hidden bg-white pt-150 dark:bg-dark-300 max-md:pt-20">
@@ -28,7 +28,9 @@ const FooterV2 = () => {
               width={70}
               height={29}
             />
-            <p className="max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
+            <p className="max-w-[350px] max-lg:mx-auto">
+              {FooterData.footerText}
+            </p>
           </div>
           <div>
             <ul className="social-link flex items-center gap-4 max-lg:justify-center">
@@ -62,7 +64,8 @@ const FooterV2 = () => {
                 <li key={items.id}>
                   <Link
                     href={items.link}
-                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                  >
                     {items.name}
                   </Link>
                 </li>
@@ -76,7 +79,8 @@ const FooterV2 = () => {
                 <li key={items.id}>
                   <Link
                     href={items.link}
-                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                  >
                     {items.name}
                   </Link>
                 </li>
@@ -89,7 +93,8 @@ const FooterV2 = () => {
             <p className="mb-3">
               <Link
                 href={`mailto:${FooterData.email}`}
-                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+              >
                 {FooterData.email}
               </Link>
             </p>
@@ -97,7 +102,8 @@ const FooterV2 = () => {
             <p className="mb-3">
               <Link
                 href={`tel:${FooterData.phone.split(' ').join('')}`}
-                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+              >
                 {FooterData.phone}
               </Link>
             </p>
@@ -112,7 +118,9 @@ const FooterV2 = () => {
                     placeholder="Enter your email"
                     className="placeholder:text-light text-light border-borderColour h-full rounded-[60px] border  bg-transparent bg-white ps-5 leading-[1.5] text-[#A1A49D] outline-none transition-all duration-300 focus:border-primary focus:outline-none dark:border-[#31332F] dark:bg-dark-200 dark:placeholder:text-[#A1A49D] dark:focus:border-primary  max-lg:col-span-full max-lg:py-3.5 lg:col-span-8"
                   />
-                  <button className="btn max-lg:col-span-full lg:col-span-4">Get Started</button>
+                  <button className="btn max-lg:col-span-full lg:col-span-4">
+                    Get Started
+                  </button>
                 </div>
               </form>
               <ul className=" mt-6 flex items-center max-lg:justify-between max-lg:gap-y-2.5 max-md:flex-col lg:gap-5 ">
@@ -123,7 +131,8 @@ const FooterV2 = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3">
+                    className="mr-3"
+                  >
                     <path
                       d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                       stroke=""
@@ -142,7 +151,8 @@ const FooterV2 = () => {
                     viewBox="0 0 20 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3">
+                    className="mr-3"
+                  >
                     <path
                       d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
                       stroke=""
@@ -179,14 +189,16 @@ const FooterV2 = () => {
               <li>
                 <Link
                   href="/privacy"
-                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link
                   href="/terms"
-                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                >
                   Terms & Conditions
                 </Link>
               </li>
@@ -195,7 +207,7 @@ const FooterV2 = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default FooterV2
+export default FooterV2;

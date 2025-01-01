@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import IntegrationAnimation from './IntegrationAnimation'
+import Link from 'next/link';
+import IntegrationAnimation from './IntegrationAnimation';
 
 const Integration = () => {
   return (
@@ -8,10 +8,12 @@ const Integration = () => {
         <div className="mx-auto max-w-[620px] text-center">
           <p className="section-tagline">Top Integration</p>
 
-          <h2 className="mb-8">Make productivity easier with 50+ Integrations</h2>
+          <h2 className="mb-8">
+            Make productivity easier with 50+ Integrations
+          </h2>
           <p className="mb-10">
-            Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin
-            though it looks like nothing.
+            Until recently, the prevailing view assumed lorem ipsum was born as
+            a nonsense text. It&rsquo;s not Latin though it looks like nothing.
           </p>
 
           <Link href="/contact" className="btn-outline">
@@ -21,7 +23,7 @@ const Integration = () => {
         <IntegrationAnimation />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Integration
+export default Integration;

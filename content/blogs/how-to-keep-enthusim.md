@@ -1,11 +1,11 @@
 ---
 title: How to keep the enthusiasm till the end of a project
-thumbnail: "/images/blog/blog4.jpg"
-featureImage: "/images/blog/blog4.jpg"
+thumbnail: '/images/blog/blog4.jpg'
+featureImage: '/images/blog/blog4.jpg'
 date: Aug 30, 2024
 author: Kristin Watson
 featured: true
-categories: "Digital"
+categories: 'Digital'
 tags: Finance
 ---
 
@@ -24,7 +24,7 @@ Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare
 - Manage your time so you’ll get more done in less time
 - Cut expenses without sacrificing quality
 - Attract and retain quality, high-paying customers
-<!-- 
+<!--
 ![blog images](/images/blog/blogDetails1.png)
 ![about images](/images/blog/blogDetails2.png) -->
 

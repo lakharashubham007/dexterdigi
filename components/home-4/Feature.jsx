@@ -1,10 +1,10 @@
-import dataDark1 from '@/public/images/home-4-img/data1-dark.png'
-import data1 from '@/public/images/home-4-img/data1.png'
-import dataDark2 from '@/public/images/home-4-img/data2-dark.png'
-import data2 from '@/public/images/home-4-img/data2.png'
-import dataDark3 from '@/public/images/home-4-img/data3-dark.png'
-import data3 from '@/public/images/home-4-img/data3.png'
-import Image from 'next/image'
+import dataDark1 from '@/public/images/home-4-img/data1-dark.png';
+import data1 from '@/public/images/home-4-img/data1.png';
+import dataDark2 from '@/public/images/home-4-img/data2-dark.png';
+import data2 from '@/public/images/home-4-img/data2.png';
+import dataDark3 from '@/public/images/home-4-img/data3-dark.png';
+import data3 from '@/public/images/home-4-img/data3.png';
+import Image from 'next/image';
 
 const Feature = () => {
   const userManageCard = [
@@ -32,7 +32,7 @@ const Feature = () => {
       description:
         'Lorem ipsum dolor sit amet consectur suspen ultricies aenean viverra sodales vulputate nis tellus nibh tristique sit felis.',
     },
-  ]
+  ];
 
   return (
     <section className="container pb-[150px]">
@@ -40,7 +40,8 @@ const Feature = () => {
         {userManageCard?.map((userCard) => (
           <div
             key={userCard.id}
-            className="hover:dark:border-borderColour-dark relative max-w-[402px] rounded-medium border border-solid border-transparent bg-white p-8 shadow-nav transition-colors hover:transition-colors dark:bg-dark-200 max-lg:p-5">
+            className="hover:dark:border-borderColour-dark relative max-w-[402px] rounded-medium border border-solid border-transparent bg-white p-8 shadow-nav transition-colors hover:transition-colors dark:bg-dark-200 max-lg:p-5"
+          >
             <figure>
               <Image
                 src={userCard.img}
@@ -54,14 +55,16 @@ const Feature = () => {
               />
             </figure>
             <figcaption>
-              <h3 className="mb-2.5 mt-10 max-w-[70%] leading-8">{userCard.title}</h3>
+              <h3 className="mb-2.5 mt-10 max-w-[70%] leading-8">
+                {userCard.title}
+              </h3>
               <p>{userCard.description}</p>
             </figcaption>
           </div>
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

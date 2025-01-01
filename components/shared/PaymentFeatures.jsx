@@ -1,5 +1,5 @@
-import { cn } from '@/utils/cn'
-import Image from 'next/image'
+import { cn } from '@/utils/cn';
+import Image from 'next/image';
 
 const PaymentFeatures = ({
   sectionTag,
@@ -24,7 +24,10 @@ const PaymentFeatures = ({
           </div>
           <div className=" grid grid-cols-3 gap-8 max-md:grid-cols-1">
             {features.map((items) => (
-              <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200" key={items.id}>
+              <div
+                className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
+                key={items.id}
+              >
                 <div className="h-full rounded border border-dashed border-gray-100 p-10 text-center dark:border-borderColor-dark max-lg:p-5 ">
                   <Image
                     src={items.iconLight}
@@ -49,7 +52,7 @@ const PaymentFeatures = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PaymentFeatures
+export default PaymentFeatures;

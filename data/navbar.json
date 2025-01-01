@@ -1,0 +1,54 @@
+{
+  "menuData": {
+    "logoLight": "/images/newlogolight.png",
+    "logoDark": "/images/newlogodark.png",
+    "btnLlink": "/request-demo",
+    "menuContent": [
+      {
+        "id": 1,
+        "title": "Home",
+        "path": "/",
+        "newTab": false
+      },
+      {
+        "id": 2,
+        "title": "Portfolio",
+        "path": "/portfolio",
+        "newTab": false
+      },
+      {
+        "id": 3,
+        "title": "Services",
+        "path": "/services",
+        "newTab": false
+       
+      },
+      {
+        "id": 4,
+        "title": "Blogs",
+        "path": "/blog-list",
+        "newTab": false
+      },
+      {
+        "id": 5,
+        "title": "News",
+        "path": "/blog",
+        "newTab": false
+      },
+     
+     
+      {
+        "id": 7,
+        "title": "About",
+        "path": "/about",
+        "newTab": false
+      },
+      {
+        "id": 8,
+        "title": "Contact Us",
+        "path": "/contact",
+        "newTab": false
+      }
+    ]
+  }
+}

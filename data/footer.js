@@ -4,7 +4,7 @@ export const FooterData = {
   logoDark: '/images/newlogodark.png',
   footerText:
     'Now turn your idea into technology and build your dream business with latest technology.',
-  copyright: `${new Date().getFullYear()} DexterDigi. All Rights Reserved`,
+  copyright: `${new Date().getFullYear()} DexterDigi © All Rights Reserved`,
   email: 'info@dexterdigi.com',
   phone: '+91 800-5874-335',
   expolre: [

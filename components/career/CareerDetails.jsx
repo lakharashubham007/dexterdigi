@@ -1,7 +1,7 @@
 'use client';
 import { fadeUpAnimation } from '@/data/animation';
 import useWhileInView from '@/hooks/useWhileInView';
-import CareerImage from '@/public/images/about/career.png';
+import CareerImage from '@/public/images/about/work.jpg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';

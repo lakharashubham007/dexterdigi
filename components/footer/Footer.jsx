@@ -104,7 +104,7 @@ const Footer = () => {
 
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
-            <p className="max-lg:mb-10">{FooterData.copyright}d</p>
+            <p className="max-lg:mb-10">{FooterData.copyright}</p>
             <ul className="flex items-center gap-15 max-lg:justify-center  lg:ml-auto">
               <li>
                 <Link

@@ -44,19 +44,19 @@ const PrimaryNavbar = () => {
           <div className="nav-logo xl:min-w-[266px]">
             <Link href="/">
               <Image
-                style={{ transform: 'scale(2)' }}
+                // style={{ transform: 'scale(2)' }}
                 src={menuData.logoLight}
                 alt="logo"
                 className="dark:hidden"
-                width={70}
+                width={100}
                 height={29}
               />
               <Image
-                style={{ transform: 'scale(2)' }}
+                // style={{ transform: 'scale(2)' }}
                 src={menuData.logoDark}
                 alt="logo dark version"
                 className="hidden dark:inline-block"
-                width={70}
+                width={100}
                 height={29}
               />
             </Link>

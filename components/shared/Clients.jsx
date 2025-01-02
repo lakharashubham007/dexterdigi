@@ -19,7 +19,7 @@ const Clients = ({
         <div className=" px-10px mx-auto max-w-[550px] text-center max-lg:px-2.5">
           {sectionTitle && (
             <h2 className="mb-10">
-              The world&rsquo;s best companies trust Drexterdigi
+              The world&rsquo;s best companies trust Dexterdigi
             </h2>
           )}
           {sectionDetails && (

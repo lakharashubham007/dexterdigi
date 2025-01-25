@@ -30,9 +30,7 @@ const Pricing = ({
             )}
             {pricingDescription ? (
               <p className="mb-12 mt-10">
-                Until recently, the prevailing view assumed lorem ipsum was born
-                as  <br /> text. It&lsquo;s not Latin, though it looks
-                like it
+                Start your journey together with dexterdigi.
               </p>
             ) : (
               ''

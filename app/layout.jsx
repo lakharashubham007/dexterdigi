@@ -30,7 +30,7 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: {
     default: 'DexterDigi - Software Development',
-    template: 'DexterDigi Software Developmen',
+    template: 'DexterDigi Software Development, Website and Mobile development company.',
   },
   description: 'DexterDigi is software development company.',
 };

@@ -1,0 +1,136 @@
+{
+  "ProjectData": [
+    {
+      "id": 1,
+      "slug": "event-booking",
+      "title": "Event Booking System",
+      "category": "Web Development",
+      "excerpt": "A robust platform for managing and booking events seamlessly.",
+      "iconLight": "/images/new/7.png",
+      "iconDark": "/images/new/7.png",
+      "featureImage": "/images/event.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE1",
+      "projectDetails": "Our event booking system enables clients to easily schedule, manage, and book events with features like automated reminders, secure payments, and real-time updates.",
+      "projectFeatures": [
+        { "item": "Scalable architecture for high traffic" },
+        { "item": "Integrated payment gateway" },
+        { "item": "User-friendly dashboard for event organizers" }
+      ],
+      "projectImpact": [
+        { "item": "Improved user experience for booking events" },
+        { "item": "Reduction in manual effort with automation" },
+        { "item": "Enhanced data security and reliability" }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "traveling-website",
+      "title": "Traveling Website",
+      "category": "Web Development",
+      "excerpt": "A seamless platform for travel bookings and itinerary management.",
+      "iconLight": "/images/new/6.png",
+      "iconDark": "/images/new/6.png",
+      "featureImage": "/images/travel.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE2",
+      "projectDetails": "This traveling website offers real-time booking and itinerary planning features. It is designed to make travel convenient and personalized for users.",
+      "projectFeatures": [
+        { "item": "Real-time travel bookings" },
+        { "item": "AI-based destination recommendations" },
+        { "item": "Customizable itinerary planning" }
+      ],
+      "projectImpact": [
+        { "item": "Increased travel convenience for users" },
+        { "item": "Faster bookings with real-time availability" },
+        { "item": "Personalized experiences through AI" }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "mobile-payment-app",
+      "title": "Mobile Payment App",
+      "category": "Mobile",
+      "excerpt": "A highly secure and fast payment app for mobile platforms.",
+      "iconLight": "/images/new/8.png",
+      "iconDark": "/images/new/8.png",
+      "featureImage": "/images/mobilepayment.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE3",
+      "projectDetails": "This app allows users to perform quick and secure transactions using QR codes and supports multiple currencies for global usage.",
+      "projectFeatures": [
+        { "item": "QR code-based payments" },
+        { "item": "Multi-currency support" },
+        { "item": "Detailed transaction history" }
+      ],
+      "projectImpact": [
+        { "item": "Streamlined payments for users" },
+        { "item": "Secure and fast transactions" },
+        { "item": "Increased financial accessibility globally" }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "e-learning-platform",
+      "title": "E-Learning Platform",
+      "category": "Web Development",
+      "excerpt": "A platform for delivering educational content to learners globally.",
+      "iconLight": "/images/new/8.png",
+      "iconDark": "/images/new/8.png",
+      "featureImage": "/images/elearnning.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE4",
+      "projectDetails": "An online learning platform offering video tutorials, quizzes, and progress tracking. It is ideal for learners seeking flexible education options.",
+      "projectFeatures": [
+        { "item": "Video tutorials and live sessions" },
+        { "item": "Interactive quizzes and assessments" },
+        { "item": "Progress tracking and certifications" }
+      ],
+      "projectImpact": [
+        { "item": "Enhanced learning flexibility for users" },
+        { "item": "Improved engagement through interactivity" },
+        { "item": "Increased accessibility to quality education" }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "inventory-management",
+      "title": "Inventory Management System",
+      "category": "Web Development",
+      "excerpt": "A system to streamline inventory tracking and management.",
+      "iconLight": "/images/new/6.png",
+      "iconDark": "/images/new/6.png",
+      "featureImage": "/images/inventory.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE5",
+      "projectDetails": "This system simplifies inventory control with real-time tracking, stock alerts, and analytics for improved decision-making.",
+      "projectFeatures": [
+        { "item": "Real-time stock tracking" },
+        { "item": "Automated low-stock alerts" },
+        { "item": "Advanced analytics and reporting" }
+      ],
+      "projectImpact": [
+        { "item": "Reduced stockouts and overstocking" },
+        { "item": "Improved operational efficiency" },
+        { "item": "Data-driven inventory decisions" }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "fitness-tracker-app",
+      "title": "Fitness Tracker App",
+      "category": "Mobile",
+      "excerpt": "A mobile app for tracking fitness goals and activities.",
+      "iconLight": "/images/new/7.png",
+      "iconDark": "/images/new/7.png",
+      "featureImage": "/images/fitness.jpg",
+      "videoLink": "https://www.youtube.com/embed/EXAMPLE6",
+      "projectDetails": "A user-friendly app that tracks physical activities, monitors progress, and provides personalized fitness recommendations.",
+      "projectFeatures": [
+        { "item": "Activity tracking and goal setting" },
+        { "item": "Health analytics and insights" },
+        { "item": "Personalized fitness recommendations" }
+      ],
+      "projectImpact": [
+        { "item": "Improved health awareness among users" },
+        { "item": "Easier tracking of fitness progress" },
+        { "item": "Enhanced user motivation and consistency" }
+      ]
+    }
+  ]
+}

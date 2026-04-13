@@ -1,0 +1,142 @@
+{
+  "ServiceData": [
+    {
+      "id": 1,
+      "slug": "web-development",
+      "title": "Web Development",
+      "excerpt": "Creating innovative, responsive, and scalable websites tailored to modern business needs.",
+      "iconLight": "/images/services/investment.svg",
+      "iconDark": "/images/services/investment-dark.svg",
+      "featureImage": "/images/webdev.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "Our web development services encompass the latest technologies to deliver robust, secure, and scalable websites. From e-commerce platforms to dynamic web applications, we ensure seamless performance and exceptional user experience.",
+      "serviceExpectation": "We aim to deliver optimized, responsive, and SEO-friendly websites that cater to your target audience.",
+      "serviceExpectationList": [
+        { "item": "Custom Website Design" },
+        { "item": "SEO Optimization" },
+        { "item": "High Performance and Scalability" }
+      ],
+      "serviceQualifications": "Proficient in modern web frameworks, we create solutions that align with your business goals.",
+      "serviceQualificationsList": [
+        { "item": "Expertise in React, Angular, and Vue.js" },
+        { "item": "Strong Knowledge of CMS Platforms" },
+        { "item": "Experience with Cloud Integration" }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "mobile-development",
+      "title": "Mobile Development",
+      "excerpt": "Designing seamless mobile applications for a connected world.",
+      "iconLight": "/images/services/sales.svg",
+      "iconDark": "/images/services/sales-dark.svg",
+      "featureImage": "/images/mobile.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "Our mobile development team creates apps that provide seamless functionality, intuitive user interfaces, and outstanding performance for iOS and Android devices.",
+      "serviceExpectation": "Delivering fast, efficient, and engaging mobile applications.",
+      "serviceExpectationList": [
+        { "item": "Native and Hybrid App Solutions" },
+        { "item": "Cross-Platform Development" },
+        { "item": "User-Focused Designs" }
+      ],
+      "serviceQualifications": "Our expertise ensures mobile solutions that are secure, scalable, and aligned with your business needs.",
+      "serviceQualificationsList": [
+        { "item": "Proficiency in Swift, Kotlin, and Flutter" },
+        { "item": "Custom App Development" },
+        { "item": "API and Third-Party Integration" }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "digital-marketing",
+      "title": "Digital Marketing",
+      "excerpt": "Driving growth through innovative marketing strategies.",
+      "iconLight": "/images/services/loan.svg",
+      "iconDark": "/images/services/loan-dark.svg",
+      "featureImage": "/images/media.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "Our digital marketing services encompass SEO, PPC, content marketing, and social media strategies designed to maximize your online presence and drive measurable results.",
+      "serviceExpectation": "Boosting brand visibility and customer engagement through data-driven campaigns.",
+      "serviceExpectationList": [
+        { "item": "Search Engine Optimization (SEO)" },
+        { "item": "Pay-Per-Click Advertising" },
+        { "item": "Social Media Management" }
+      ],
+      "serviceQualifications": "Our team leverages cutting-edge tools and analytics to execute impactful campaigns.",
+      "serviceQualificationsList": [
+        { "item": "Google Ads Certified Professionals" },
+        { "item": "Expertise in Analytics and Reporting" },
+        { "item": "Creative Content Strategies" }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "software-maintenance",
+      "title": "Software Maintenance",
+      "excerpt": "Ensuring your software remains reliable and up-to-date.",
+      "iconLight": "/images/services/finance.svg",
+      "iconDark": "/images/services/finance-dark.svg",
+      "featureImage": "/images/sme.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "Our software maintenance services include regular updates, performance monitoring, and issue resolution to ensure your systems function optimally.",
+      "serviceExpectation": "Providing dependable support to enhance software efficiency and longevity.",
+      "serviceExpectationList": [
+        { "item": "Scheduled Updates" },
+        { "item": "Error and Bug Fixing" },
+        { "item": "System Optimization" }
+      ],
+      "serviceQualifications": "Committed to keeping your software at peak performance.",
+      "serviceQualificationsList": [
+        { "item": "24/7 Technical Support" },
+        { "item": "Proactive Maintenance Strategies" },
+        { "item": "Enhanced Security Features" }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "ui-ux-development",
+      "title": "UI/UX Development",
+      "excerpt": "Designing user experiences that inspire and engage.",
+      "iconLight": "/images/services/effeciency.svg",
+      "iconDark": "/images/services/effeciency-dark.svg",
+      "featureImage": "/images/uiuxdesign.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "We focus on creating intuitive, aesthetically appealing, and functional designs that enhance user interaction and drive satisfaction.",
+      "serviceExpectation": "Delivering designs that balance creativity and usability.",
+      "serviceExpectationList": [
+        { "item": "User Research and Personas" },
+        { "item": "Wireframing and Prototyping" },
+        { "item": "Accessibility and Responsiveness" }
+      ],
+      "serviceQualifications": "Equipped with the latest tools and techniques, our team crafts impactful user experiences.",
+      "serviceQualificationsList": [
+        { "item": "Expertise in Figma and Adobe XD" },
+        { "item": "In-Depth Usability Testing" },
+        { "item": "Strong Focus on Design Trends" }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "software-consultancy",
+      "title": "Software Consultancy",
+      "excerpt": "Providing strategic guidance for your software endeavors.",
+      "iconLight": "/images/services/fund.svg",
+      "iconDark": "/images/services/fund-dark.svg",
+      "featureImage": "/images/sc.jpg",
+      "videoLink": "https://www.youtube.com/embed/YE7VzlLtp-4?si=XvNRN6ztByvZQzqh",
+      "serviceDetails": "Our consultancy services help businesses navigate software challenges with expert insights and actionable recommendations.",
+      "serviceExpectation": "Empowering organizations to make informed technology decisions.",
+      "serviceExpectationList": [
+        { "item": "Tailored Solutions" },
+        { "item": "In-Depth Technical Assessments" },
+        { "item": "Roadmap Development" }
+      ],
+      "serviceQualifications": "Our consultants bring extensive industry experience and technical knowledge to every project.",
+      "serviceQualificationsList": [
+        { "item": "Broad Expertise in Multiple Domains" },
+        { "item": "Strategic Vision and Execution" },
+        { "item": "Client-Centric Approach" }
+      ]
+    }
+  ]
+}
